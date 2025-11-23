@@ -540,6 +540,45 @@ function applyReviewsAnimations() {
     });
 }
 
+// Donation Modal functionality
+const donationModal = document.getElementById('donationModal');
+const donationBtn = document.getElementById('donationBtn');
+const modalClose = document.querySelector('.modal-close');
+
+// Open modal when donation button is clicked
+if (donationBtn) {
+    donationBtn.addEventListener('click', () => {
+        donationModal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+    });
+}
+
+// Close modal when X is clicked
+if (modalClose) {
+    modalClose.addEventListener('click', () => {
+        donationModal.classList.remove('show');
+        document.body.style.overflow = ''; // Restore scrolling
+    });
+}
+
+// Close modal when clicking outside the modal content
+if (donationModal) {
+    donationModal.addEventListener('click', (e) => {
+        if (e.target === donationModal) {
+            donationModal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && donationModal.classList.contains('show')) {
+        donationModal.classList.remove('show');
+        document.body.style.overflow = '';
+    }
+});
+
 // Console message
 console.log('%c🍊 Chùa Kỳ Viên - Xã Tân Xuân 🍊', 'color: #ff9800; font-size: 24px; font-weight: bold;');
 console.log('%cChào mừng bạn đến với website của chúng tôi!', 'color: #2e7d32; font-size: 16px;');
