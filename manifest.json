@@ -1,0 +1,36 @@
+{
+  "name": "Chùa Kỳ Viên - Xã Tân Xuân",
+  "short_name": "Chùa Kỳ Viên",
+  "description": "Nơi tâm linh thanh tịnh - An lạc bình yên. Ngôi chùa cổ kính tại xã Tân Xuân - Nơi tu tập, cầu nguyện và tìm hiểu giáo pháp Đức Phật.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8e1",
+  "theme_color": "#ffa726",
+  "orientation": "portrait-primary",
+  "lang": "vi",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛕</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' fill='%23ffa726'/><text x='96' y='140' font-size='120' text-anchor='middle' fill='white'>🛕</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%23ffa726'/><text x='256' y='370' font-size='320' text-anchor='middle' fill='white'>🛕</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["religion", "lifestyle", "education"],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
