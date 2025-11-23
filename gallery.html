@@ -13,9 +13,11 @@
 
         <title>Thư Viện Hình Ảnh | Chùa Kỳ Viên - Xã Tân Xuân</title>
 
-        <link rel="stylesheet" href="./assets/css/styles.css">
         <link rel="icon" type="image/png"
             href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛕</text></svg>">
+
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/libs/turnjs/turn.min.css">
 
         <!-- og meta -->
         <meta property="og:type" value="website" />
@@ -66,7 +68,7 @@
                 </div>
                 <!-- Turn.js flipbook container -->
                 <div class="flipbook-wrapper">
-                    <div id="flipbook" class="flipbook">
+                    <div id="flipbook" class="flipbook" role="region" aria-label="Flipbook">
                         <!-- Pages will be loaded dynamically from images.json -->
                     </div>
                 </div>
@@ -131,9 +133,13 @@
             ↑
         </button>
 
+        <!-- Turn.js -->
+        <script src="./assets/libs/turnjs/turn.min.js"></script>
+
         <script src="./assets/js/script.js"></script>
-        <script src="./assets/libs/vietqr.js" defer async></script>
+        <script src="./assets/vendor/vietqr.js" defer async></script>
         <script src="./assets/js/gallery.js"></script>
+
     </body>
 
 </html>
