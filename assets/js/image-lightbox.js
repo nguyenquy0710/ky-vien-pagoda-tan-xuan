@@ -129,7 +129,7 @@
 
         // Observe campaigns grid and detail content
         const campaignsGrid = document.getElementById('campaignsGrid');
-        const detailContent = document.getElementById('campaignDetailContent');
+        const detailContent = document.getElementById('campaignContent');
         
         if (campaignsGrid) {
             observer.observe(campaignsGrid, { childList: true, subtree: true });
