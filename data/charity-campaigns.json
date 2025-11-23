@@ -11,7 +11,7 @@
       "currentAmount": 350000000,
       "beneficiaries": 1000,
       "status": "completed",
-      "imageUrl": "./uploads/campaign-001-tet-an-lac-mang-xuan-ve-nha.jpg",
+      "imageUrl": "",
       "location": "Hàm Tân, Bình Thuận",
       "activities": [
         "Trao quà Tết gồm gạo, dầu ăn, mì tôm cho 500 gia đình nghèo",
@@ -35,7 +35,7 @@
       "currentAmount": 95000000,
       "beneficiaries": 300,
       "status": "completed",
-      "imageUrl": "./uploads/campaign-002-xuan-yeu-thuong-cham-soc-nguoi-gia.jpg",
+      "imageUrl": "",
       "location": "Bình Thuận và các tỉnh lân cận",
       "activities": [
         "Khám bệnh, cấp thuốc miễn phí cho 200 người già",
