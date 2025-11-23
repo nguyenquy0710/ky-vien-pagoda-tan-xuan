@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "src": "/assets/imgs/IMG_3524.JPG",
+      "alt": "Hình ảnh 1",
+      "title": "Vườn xanh mát",
+      "description": "Cảnh quan xanh tươi và mát mẻ tại vườn trái cây"
+    },
+    {
+      "src": "/assets/imgs/IMG_3524.JPG",
+      "alt": "Hình ảnh 2",
+      "title": "Trái cây tươi ngon",
+      "description": "Các loại trái cây đặc sản được trồng tại vườn"
+    },
+    {
+      "src": "/assets/imgs/IMG_3524.JPG",
+      "alt": "Hình ảnh 3",
+      "title": "Ẩm thực đặc sản",
+      "description": "Món ăn địa phương được chế biến từ nguyên liệu tươi"
+    },
+    {
+      "src": "/assets/imgs/IMG_3524.JPG",
+      "alt": "Hình ảnh 4",
+      "title": "Trải nghiệm hái trái",
+      "description": "Du khách tự tay hái trái cây tươi ngon"
+    },
+    {
+      "src": "/assets/imgs/IMG_3524.JPG",
+      "alt": "Hình ảnh 5",
+      "title": "Không gian xanh",
+      "description": "Không gian yên bình của miệt vườn Nam Bộ"
+    },
+    {
+      "src": "/assets/imgs/IMG_3524.JPG",
+      "alt": "Hình ảnh 6",
+      "title": "Quà tặng đặc sản",
+      "description": "Sản phẩm đặc sản làm quà tặng ý nghĩa"
+    }
+  ]
+}

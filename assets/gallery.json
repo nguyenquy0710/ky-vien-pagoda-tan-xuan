@@ -1,0 +1,64 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "title": "Vườn xanh mát",
+      "description": "Cảnh quan xanh tươi và mát mẻ tại vườn trái cây",
+      "emoji": "🌳",
+      "backgroundColor": "#c8e6c9",
+      "circleColor": "#66bb6a",
+      "textColor": "#2e7d32",
+      "category": "garden"
+    },
+    {
+      "id": 2,
+      "title": "Trái cây tươi ngon",
+      "description": "Các loại trái cây tươi ngon được trồng tại vườn",
+      "emoji": "🍊",
+      "backgroundColor": "#fff3e0",
+      "circleColor": "#ff9800",
+      "textColor": "#e65100",
+      "category": "fruits"
+    },
+    {
+      "id": 3,
+      "title": "Ẩm thực đặc sản",
+      "description": "Các món ăn đặc sản được chế biến từ nguyên liệu tươi",
+      "emoji": "🍽️",
+      "backgroundColor": "#ffe0b2",
+      "circleColor": "#ff6f00",
+      "textColor": "#e65100",
+      "category": "food"
+    },
+    {
+      "id": 4,
+      "title": "Trải nghiệm hái trái",
+      "description": "Trải nghiệm thú vị khi tự tay hái trái cây",
+      "emoji": "👨‍🌾",
+      "backgroundColor": "#f1f8e9",
+      "circleColor": "#7cb342",
+      "textColor": "#558b2f",
+      "category": "experience"
+    },
+    {
+      "id": 5,
+      "title": "Không gian xanh",
+      "description": "Không gian trong lành và yên bình của miệt vườn",
+      "emoji": "🏞️",
+      "backgroundColor": "#e8f5e9",
+      "circleColor": "#43a047",
+      "textColor": "#2e7d32",
+      "category": "landscape"
+    },
+    {
+      "id": 6,
+      "title": "Quà tặng đặc sản",
+      "description": "Các sản phẩm đặc sản làm quà tặng ý nghĩa",
+      "emoji": "🎁",
+      "backgroundColor": "#fff8e1",
+      "circleColor": "#ffa726",
+      "textColor": "#ef6c00",
+      "category": "gifts"
+    }
+  ]
+}
