@@ -71,42 +71,6 @@
             },
             "stars": 5,
             "text": "\"Thầy giảng dạy rõ ràng, dễ hiểu, truyền cảm hứng để tôi thực tập chánh niệm trong đời sống hằng ngày. Rất biết ơn chư tăng và nhà chùa.\""
-        },
-        {
-            "id": 7,
-            "author": {
-                "avatar": "👩",
-                "info": {
-                    "name": "Tuyết Mai",
-                    "address": "Quảng Nam"
-                }
-            },
-            "stars": 5,
-            "text": "\"Các khóa tu cuối tuần được tổ chức chu đáo, nhiều trải nghiệm ý nghĩa. Tôi cảm thấy năng lượng tích cực và nhẹ nhàng hơn sau mỗi lần tham gia.\""
-        },
-        {
-            "id": 8,
-            "author": {
-                "avatar": "👨",
-                "info": {
-                    "name": "Tuấn Kiệt",
-                    "address": "Vũng Tàu"
-                }
-            },
-            "stars": 5,
-            "text": "\"Không chỉ là nơi lễ Phật, chùa còn giúp tôi hiểu sâu hơn về giá trị đạo đức và nhân cách trong cuộc sống. Những bài pháp thoại thật sự đem lại chuyển hóa.\""
-        },
-        {
-            "id": 9,
-            "author": {
-                "avatar": "👩",
-                "info": {
-                    "name": "Hồng Nhung",
-                    "address": "Bình Định"
-                }
-            },
-            "stars": 5,
-            "text": "\"Chùa rất sạch đẹp, cảnh quan sinh thái gần gũi và an lạc. Tôi rất thích các buổi thiền hành quanh sân chùa, cảm giác thật thư thái và bình yên.\""
         }
     ]
 }
