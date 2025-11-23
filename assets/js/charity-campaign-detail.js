@@ -1,6 +1,16 @@
 // Load and display campaign detail
 let currentCampaign = null;
 
+// HTML escape function to prevent XSS
+function escapeHtml(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
 // Get campaign ID from URL
 function getCampaignIdFromUrl() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -49,21 +59,21 @@ function displayCampaignDetail(campaign) {
     content.innerHTML = `
         <div class="campaign-header">
             <div class="campaign-header-image">
-                <img src="${campaign.image}" alt="${campaign.title}" loading="lazy">
+                <img src="${escapeHtml(campaign.image)}" alt="${escapeHtml(campaign.title)}" loading="lazy">
                 <div class="campaign-status-badge ${statusClass}">
                     ${statusText}
                 </div>
             </div>
             <div class="campaign-header-info">
-                <h1 class="campaign-detail-title">${campaign.title}</h1>
-                <p class="campaign-detail-description">${campaign.description}</p>
+                <h1 class="campaign-detail-title">${escapeHtml(campaign.title)}</h1>
+                <p class="campaign-detail-description">${escapeHtml(campaign.description)}</p>
                 
                 <div class="campaign-meta">
                     <div class="meta-item">
                         <span class="meta-icon">📍</span>
                         <div class="meta-content">
                             <span class="meta-label">Địa điểm</span>
-                            <span class="meta-value">${campaign.location}</span>
+                            <span class="meta-value">${escapeHtml(campaign.location)}</span>
                         </div>
                     </div>
                     <div class="meta-item">
@@ -92,7 +102,7 @@ function displayCampaignDetail(campaign) {
                         ${campaign.activities.map(activity => `
                             <li class="activity-item">
                                 <span class="activity-icon">✓</span>
-                                <span class="activity-text">${activity}</span>
+                                <span class="activity-text">${escapeHtml(activity)}</span>
                             </li>
                         `).join('')}
                     </ul>
@@ -104,7 +114,7 @@ function displayCampaignDetail(campaign) {
                         ${campaign.highlights.map(highlight => `
                             <div class="highlight-card">
                                 <span class="highlight-icon">⭐</span>
-                                <p class="highlight-text">${highlight}</p>
+                                <p class="highlight-text">${escapeHtml(highlight)}</p>
                             </div>
                         `).join('')}
                     </div>
@@ -146,7 +156,7 @@ function displayCampaignDetail(campaign) {
                     </div>
                     
                     ${campaign.status === 'active' ? `
-                        <button class="btn btn-primary btn-block" onclick="openDonationModalWithCampaign('${campaign.title}')">
+                        <button class="btn btn-primary btn-block" id="donateButton" data-campaign-title="${escapeHtml(campaign.title)}">
                             💝 Đóng góp ngay
                         </button>
                         <p class="donation-note">Mọi đóng góp đều có ý nghĩa và được trân trọng</p>
@@ -178,6 +188,15 @@ function displayCampaignDetail(campaign) {
     
     // Update breadcrumb
     document.getElementById('breadcrumbTitle').textContent = campaign.title;
+    
+    // Add event listener for donate button if it exists
+    const donateButton = document.getElementById('donateButton');
+    if (donateButton) {
+        donateButton.addEventListener('click', function() {
+            const campaignTitle = this.getAttribute('data-campaign-title');
+            openDonationModalWithCampaign(campaignTitle);
+        });
+    }
 }
 
 // Show campaign not found
@@ -212,6 +231,7 @@ function openDonationModalWithCampaign(campaignTitle) {
     
     if (modal) {
         if (contentElement) {
+            // Safely set text content (automatically escapes HTML)
             contentElement.textContent = `${campaignTitle} - Chùa Kỳ Viên`;
         }
         modal.classList.add('show');

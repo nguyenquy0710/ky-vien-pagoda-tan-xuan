@@ -2,6 +2,16 @@
 let allCampaigns = [];
 let currentFilter = 'all';
 
+// HTML escape function to prevent XSS
+function escapeHtml(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
 // Load campaigns from JSON
 async function loadCampaigns() {
     try {
@@ -32,22 +42,23 @@ function displayCampaigns(campaigns) {
         const percentage = (campaign.currentAmount / campaign.targetAmount * 100).toFixed(0);
         const statusClass = campaign.status === 'active' ? 'status-active' : 'status-completed';
         const statusText = campaign.status === 'active' ? 'Đang diễn ra' : 'Đã hoàn thành';
+        const safeCampaignId = encodeURIComponent(campaign.id);
         
         return `
-            <div class="campaign-card" data-status="${campaign.status}">
+            <div class="campaign-card" data-status="${escapeHtml(campaign.status)}">
                 <div class="campaign-image">
-                    <img src="${campaign.image}" alt="${campaign.title}" loading="lazy">
+                    <img src="${escapeHtml(campaign.image)}" alt="${escapeHtml(campaign.title)}" loading="lazy">
                     <div class="campaign-status ${statusClass}">
                         ${statusText}
                     </div>
                 </div>
                 <div class="campaign-info">
-                    <h3 class="campaign-title">${campaign.title}</h3>
-                    <p class="campaign-description">${campaign.shortDescription}</p>
+                    <h3 class="campaign-title">${escapeHtml(campaign.title)}</h3>
+                    <p class="campaign-description">${escapeHtml(campaign.shortDescription)}</p>
                     
                     <div class="campaign-location">
                         <span class="icon">📍</span>
-                        <span>${campaign.location}</span>
+                        <span>${escapeHtml(campaign.location)}</span>
                     </div>
                     
                     <div class="campaign-stats">
@@ -73,7 +84,7 @@ function displayCampaigns(campaigns) {
                     </div>
                     
                     <div class="campaign-actions">
-                        <a href="./charity-campaign-detail.html?id=${campaign.id}" class="btn btn-primary">Xem chi tiết</a>
+                        <a href="./charity-campaign-detail.html?id=${safeCampaignId}" class="btn btn-primary">Xem chi tiết</a>
                         ${campaign.status === 'active' ? '<button class="btn btn-secondary" onclick="openDonationModal()">Đóng góp</button>' : ''}
                     </div>
                 </div>
