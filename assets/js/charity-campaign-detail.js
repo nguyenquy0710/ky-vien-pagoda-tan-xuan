@@ -164,7 +164,7 @@ function generateDetailedInfoSections(detailedInfo) {
                         ${contact.phoneNumbers.map(phone => `
                             <div class="phone-item">
                                 <span class="phone-name">${escapeHtml(phone.name)}:</span>
-                                <a href="tel:${phone.number.replace(/\s/g, '')}" class="phone-number">${escapeHtml(phone.number)}</a>
+                                <a href="tel:${phone.number.replace(/[^\d]/g, '')}" class="phone-number">${escapeHtml(phone.number)}</a>
                             </div>
                         `).join('')}
                     </div>
