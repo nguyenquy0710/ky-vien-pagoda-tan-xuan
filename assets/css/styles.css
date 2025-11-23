@@ -264,6 +264,8 @@ html {
 /* Section Common Styles */
 section {
     padding: var(--spacing-xl) 0;
+    /* Account for fixed navbar height (~70px) + small buffer to prevent header overlap when scrolling */
+    scroll-margin-top: 80px;
 }
 
 .section-header {
@@ -465,6 +467,138 @@ section {
     padding-top: var(--spacing-sm);
     border-top: 2px solid var(--lighter-gold);
 }
+
+.service-price-clickable {
+    cursor: pointer;
+    transition: var(--transition);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+}
+
+.service-price-clickable:hover {
+    background: var(--lighter-gold);
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: var(--white);
+    margin: auto;
+    padding: var(--spacing-xl);
+    border: 2px solid var(--primary-gold);
+    border-radius: var(--radius-lg);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    right: var(--spacing-md);
+    top: var(--spacing-md);
+    color: var(--text-gray);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    line-height: 1;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: var(--primary-red);
+    transform: scale(1.2);
+}
+
+.modal-title {
+    color: var(--primary-red);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.modal-subtitle {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.qr-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--lighter-gold);
+    border-radius: var(--radius-md);
+}
+
+.qr-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+.bank-info {
+    background: var(--cream);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary-gold);
+}
+
+.bank-info p {
+    margin: var(--spacing-xs) 0;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.bank-info strong {
+    color: var(--primary-red);
+}
+
 
 /* Gallery Section */
 .gallery {
