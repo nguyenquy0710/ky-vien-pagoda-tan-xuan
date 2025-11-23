@@ -2,63 +2,63 @@
   "images": [
     {
       "id": 1,
-      "title": "Vườn xanh mát",
-      "description": "Cảnh quan xanh tươi và mát mẻ tại vườn trái cây",
-      "emoji": "🌳",
-      "backgroundColor": "#c8e6c9",
-      "circleColor": "#66bb6a",
-      "textColor": "#2e7d32",
-      "category": "garden"
+      "title": "Chánh điện chùa",
+      "description": "Chánh điện linh thiêng và trang nghiêm của Chùa Kỳ Viên",
+      "emoji": "🛕",
+      "backgroundColor": "#fff8e1",
+      "circleColor": "#ffa726",
+      "textColor": "#e65100",
+      "category": "temple"
     },
     {
       "id": 2,
-      "title": "Trái cây tươi ngon",
-      "description": "Các loại trái cây tươi ngon được trồng tại vườn",
-      "emoji": "🍊",
+      "title": "Tượng Phật",
+      "description": "Tượng Phật trang nghiêm tại điện thờ chính",
+      "emoji": "🙏",
       "backgroundColor": "#fff3e0",
       "circleColor": "#ff9800",
       "textColor": "#e65100",
-      "category": "fruits"
+      "category": "buddha"
     },
     {
       "id": 3,
-      "title": "Ẩm thực đặc sản",
-      "description": "Các món ăn đặc sản được chế biến từ nguyên liệu tươi",
-      "emoji": "🍽️",
-      "backgroundColor": "#ffe0b2",
-      "circleColor": "#ff6f00",
-      "textColor": "#e65100",
-      "category": "food"
+      "title": "Tu tập thiền định",
+      "description": "Phật tử tu tập và thiền định tại chùa",
+      "emoji": "🧘",
+      "backgroundColor": "#e8f5e9",
+      "circleColor": "#66bb6a",
+      "textColor": "#2e7d32",
+      "category": "meditation"
     },
     {
       "id": 4,
-      "title": "Trải nghiệm hái trái",
-      "description": "Trải nghiệm thú vị khi tự tay hái trái cây",
-      "emoji": "👨‍🌾",
+      "title": "Hoạt động lễ Phật",
+      "description": "Các nghi lễ cầu nguyện và lễ Phật tại chùa",
+      "emoji": "☸️",
       "backgroundColor": "#f1f8e9",
       "circleColor": "#7cb342",
       "textColor": "#558b2f",
-      "category": "experience"
+      "category": "ceremony"
     },
     {
       "id": 5,
-      "title": "Không gian xanh",
-      "description": "Không gian trong lành và yên bình của miệt vườn",
-      "emoji": "🏞️",
-      "backgroundColor": "#e8f5e9",
-      "circleColor": "#43a047",
-      "textColor": "#2e7d32",
-      "category": "landscape"
+      "title": "Không gian thanh tịnh",
+      "description": "Không gian yên bình và thanh tịnh của chùa",
+      "emoji": "🕉️",
+      "backgroundColor": "#fffde7",
+      "circleColor": "#fdd835",
+      "textColor": "#f57f17",
+      "category": "atmosphere"
     },
     {
       "id": 6,
-      "title": "Quà tặng đặc sản",
-      "description": "Các sản phẩm đặc sản làm quà tặng ý nghĩa",
-      "emoji": "🎁",
-      "backgroundColor": "#fff8e1",
-      "circleColor": "#ffa726",
-      "textColor": "#ef6c00",
-      "category": "gifts"
+      "title": "Hoạt động từ thiện",
+      "description": "Các hoạt động từ thiện và phát quà của chùa",
+      "emoji": "💝",
+      "backgroundColor": "#fce4ec",
+      "circleColor": "#ec407a",
+      "textColor": "#c2185b",
+      "category": "charity"
     }
   ]
 }
