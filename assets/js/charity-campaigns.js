@@ -2,41 +2,6 @@
 let allCampaigns = [];
 let currentFilter = 'all';
 
-// Utility to get random color for placeholder images (if needed)
-function getRandomColor() {
-    // Tạo màu hex ngẫu nhiên (RRGGBB)
-    const letters = "0123456789ABCDEF";
-    let color = "";
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
-/**
- * Generate random placeholder image URL with random bg and fg colors and custom text
- * @param {*} text Text to display on the placeholder image
- * @returns {string} URL of the generated placeholder image
- */
-function getRandomPlaceholdURL(text = "Demo") {
-    let bg = getRandomColor();
-    if (bg.toLowerCase() === '4CAF50'.toLowerCase()) {
-        bg = getRandomColor();
-    }
-    const fg = getRandomColor();
-    return `https://placehold.co/800x600/${bg}/${fg}?text=${encodeURIComponent(text)}`;
-}
-
-// HTML escape function to prevent XSS
-function escapeHtml(unsafe) {
-    return unsafe
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-}
-
 /**
  * Load campaigns from JSON file
  */
