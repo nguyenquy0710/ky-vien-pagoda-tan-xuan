@@ -32,7 +32,22 @@ document.addEventListener('click', (e) => {
     if (!e.target.closest('.navbar')) {
         navMenu.classList.remove('active');
         mobileMenuBtn.classList.remove('active');
+        // Close all dropdown menus
+        document.querySelectorAll('.nav-item-dropdown').forEach(item => {
+            item.classList.remove('active');
+        });
     }
+});
+
+// Handle mobile dropdown menu toggle
+document.querySelectorAll('.nav-item-dropdown > .nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const parent = link.parentElement;
+            parent.classList.toggle('active');
+        }
+    });
 });
 
 // Navbar scroll effect
