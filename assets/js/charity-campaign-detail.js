@@ -35,6 +35,152 @@ async function loadCampaignDetail() {
     }
 }
 
+// Generate detailed info sections
+function generateDetailedInfoSections(detailedInfo) {
+    let html = '';
+    
+    // General Information Section
+    if (detailedInfo.generalInfo) {
+        const info = detailedInfo.generalInfo;
+        html += `
+            <div class="campaign-section detailed-info-section">
+                <h2 class="section-heading">📋 Thông tin chung về chiến dịch</h2>
+                <div class="info-table">
+                    <div class="info-row">
+                        <span class="info-label">Đơn vị tổ chức:</span>
+                        <span class="info-value">${escapeHtml(info.organizer)}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Địa chỉ chùa:</span>
+                        <span class="info-value">${escapeHtml(info.templeAddress)}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Người đại diện:</span>
+                        <span class="info-value">${escapeHtml(info.representative)}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Thời gian gây quỹ:</span>
+                        <span class="info-value">${escapeHtml(info.fundraisingPeriod)}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Thời gian dự kiến đi cứu trợ:</span>
+                        <span class="info-value">${escapeHtml(info.reliefTripDate)}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Purpose and Context Section
+    if (detailedInfo.purposeAndContext) {
+        const purpose = detailedInfo.purposeAndContext;
+        html += `
+            <div class="campaign-section detailed-info-section">
+                <h2 class="section-heading">🎯 Mục đích và Bối cảnh</h2>
+                <div class="purpose-context">
+                    <div class="context-block">
+                        <h3 class="block-title">Bối cảnh</h3>
+                        <p class="block-content">${escapeHtml(purpose.context)}</p>
+                    </div>
+                    <div class="context-block">
+                        <h3 class="block-title">Mục tiêu</h3>
+                        <p class="block-content">${escapeHtml(purpose.objective)}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Gift Package Details Section
+    if (detailedInfo.giftPackageDetails && detailedInfo.giftPackageDetails.length > 0) {
+        html += `
+            <div class="campaign-section detailed-info-section">
+                <h2 class="section-heading">🎁 Chi tiết các vật phẩm kêu gọi (Cho 1 phần quà)</h2>
+                <p class="section-description">Chùa Kỳ Viên kêu gọi các nhà hảo tâm chung tay đóng góp tịnh tài và phẩm vật. Một phần quà dự kiến bao gồm:</p>
+                <div class="gift-package-table">
+                    <table class="items-table">
+                        <thead>
+                            <tr>
+                                <th>Vật phẩm</th>
+                                <th>Số lượng/phần</th>
+                                <th>Tổng cộng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${detailedInfo.giftPackageDetails.map(item => `
+                                <tr>
+                                    <td><strong>${escapeHtml(item.item)}</strong></td>
+                                    <td>${escapeHtml(item.quantity)}</td>
+                                    <td>${escapeHtml(item.total)}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Contact Information Section
+    if (detailedInfo.contactInfo) {
+        const contact = detailedInfo.contactInfo;
+        html += `
+            <div class="campaign-section detailed-info-section">
+                <h2 class="section-heading">📞 Phương thức đóng góp & Liên hệ</h2>
+                <p class="section-description">Để ủng hộ cho chiến dịch, quý mạnh thường quân có thể liên hệ qua các kênh sau:</p>
+                <div class="contact-methods">
+        `;
+        
+        // Bank Transfer Info
+        if (contact.bankTransfer) {
+            const bank = contact.bankTransfer;
+            html += `
+                <div class="contact-block">
+                    <h3 class="block-title">💳 Chuyển khoản ngân hàng</h3>
+                    <div class="bank-details">
+                        <div class="bank-detail-item">
+                            <span class="detail-label">Số tài khoản:</span>
+                            <span class="detail-value">${escapeHtml(bank.accountNumber)}</span>
+                        </div>
+                        <div class="bank-detail-item">
+                            <span class="detail-label">Ngân hàng:</span>
+                            <span class="detail-value">${escapeHtml(bank.bank)}</span>
+                        </div>
+                        <div class="bank-detail-item">
+                            <span class="detail-label">Chủ tài khoản:</span>
+                            <span class="detail-value">${escapeHtml(bank.accountHolder)}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Phone Numbers
+        if (contact.phoneNumbers && contact.phoneNumbers.length > 0) {
+            html += `
+                <div class="contact-block">
+                    <h3 class="block-title">📱 Số điện thoại liên hệ trực tiếp</h3>
+                    <div class="phone-list">
+                        ${contact.phoneNumbers.map(phone => `
+                            <div class="phone-item">
+                                <span class="phone-name">${escapeHtml(phone.name)}:</span>
+                                <a href="tel:${phone.number.replace(/\s/g, '')}" class="phone-number">${escapeHtml(phone.number)}</a>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+        
+        html += `
+                </div>
+            </div>
+        `;
+    }
+    
+    return html;
+}
+
 // Display campaign detail
 function displayCampaignDetail(campaign) {
     const content = document.getElementById('campaignContent');
@@ -111,6 +257,8 @@ function displayCampaignDetail(campaign) {
                         `).join('')}
                     </div>
                 </div>
+                
+                ${campaign.detailedInfo ? generateDetailedInfoSections(campaign.detailedInfo) : ''}
             </div>
             
             <div class="campaign-sidebar">

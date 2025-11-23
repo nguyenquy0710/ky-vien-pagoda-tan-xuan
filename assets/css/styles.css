@@ -2399,3 +2399,244 @@ section {
         max-height: 90vh;
     }
 }
+
+/* ===========================
+   Detailed Campaign Information Styles
+   =========================== */
+
+/* Detailed Info Section */
+.detailed-info-section {
+    margin-top: var(--spacing-md);
+}
+
+.section-description {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+}
+
+/* Info Table */
+.info-table {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: var(--lighter-gold);
+    border-radius: var(--radius-md);
+    align-items: center;
+}
+
+.info-label {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.info-value {
+    color: var(--text-gray);
+    line-height: 1.5;
+}
+
+/* Purpose and Context */
+.purpose-context {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.context-block {
+    padding: var(--spacing-md);
+    background: var(--lighter-gold);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary-gold);
+}
+
+.block-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.block-content {
+    color: var(--text-gray);
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Gift Package Table */
+.gift-package-table {
+    overflow-x: auto;
+    margin-top: var(--spacing-md);
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    box-shadow: 0 2px 8px var(--shadow);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.items-table thead {
+    background: var(--primary-gold);
+    color: var(--white);
+}
+
+.items-table th {
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: left;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.items-table tbody tr {
+    border-bottom: 1px solid var(--lighter-gold);
+    transition: background-color 0.2s ease;
+}
+
+.items-table tbody tr:hover {
+    background: var(--lighter-gold);
+}
+
+.items-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.items-table td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    color: var(--text-gray);
+}
+
+.items-table td:first-child {
+    color: var(--text-dark);
+}
+
+/* Contact Methods */
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.contact-block {
+    padding: var(--spacing-md);
+    background: var(--lighter-gold);
+    border-radius: var(--radius-md);
+}
+
+.contact-block .block-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--primary-gold);
+}
+
+/* Bank Details */
+.bank-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.bank-detail-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs);
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.detail-value {
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+/* Phone List */
+.phone-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.phone-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: var(--white);
+    border-radius: var(--radius-md);
+}
+
+.phone-name {
+    font-weight: 600;
+    color: var(--text-dark);
+    min-width: 120px;
+}
+
+.phone-number {
+    color: var(--primary-gold);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.phone-number:hover {
+    color: var(--secondary-red);
+    text-decoration: underline;
+}
+
+/* Responsive Styles for Detailed Info */
+@media (max-width: 768px) {
+    .info-row {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xs);
+    }
+    
+    .info-label {
+        border-bottom: 1px solid var(--primary-gold);
+        padding-bottom: var(--spacing-xs);
+    }
+    
+    .bank-detail-item {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xs);
+    }
+    
+    .detail-label {
+        border-bottom: 1px solid var(--primary-gold);
+        padding-bottom: var(--spacing-xs);
+    }
+    
+    .phone-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .phone-name {
+        min-width: auto;
+    }
+    
+    .items-table {
+        font-size: 0.9rem;
+    }
+    
+    .items-table th,
+    .items-table td {
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+}
