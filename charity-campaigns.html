@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Chùa Kỳ Viên - Xã Tân Xuân">
+        <meta name="robots" content="index, follow">
+        <meta name="description"
+            content="Các chiến dịch từ thiện của Chùa Kỳ Viên - Xã Tân Xuân. Cùng chung tay giúp đỡ người nghèo, trẻ em khó khăn.">
+        <meta name="keywords" content="từ thiện, chiến dịch, Chùa Kỳ Viên, giúp đỡ người nghèo, học bổng">
+
+        <title>Các Chiến Dịch Từ Thiện | Chùa Kỳ Viên - Xã Tân Xuân</title>
+
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="icon" type="image/png"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛕</text></svg>">
+
+        <!-- og meta -->
+        <meta property="og:type" value="website" />
+        <meta property="og:url" value="https://gist.quyit.id.vn/ky-vien-pagoda-tan-xuan/charity-campaigns.html" />
+        <meta property="og:title" value="Các Chiến Dịch Từ Thiện | Chùa Kỳ Viên - Xã Tân Xuân" />
+        <meta property="og:description"
+            value="Các chiến dịch từ thiện của Chùa Kỳ Viên - Xã Tân Xuân. Cùng chung tay giúp đỡ người nghèo, trẻ em khó khăn." />
+
+        <!-- twitter meta -->
+        <meta name="twitter:card" value="summary_large_image" />
+        <meta name="twitter:title" value="Các Chiến Dịch Từ Thiện | Chùa Kỳ Viên - Xã Tân Xuân" />
+        <meta name="twitter:description"
+            value="Các chiến dịch từ thiện của Chùa Kỳ Viên - Xã Tân Xuân. Cùng chung tay giúp đỡ người nghèo, trẻ em khó khăn." />
+
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <span class="logo">🛕</span>
+                    <span class="brand-name">Chùa Kỳ Viên</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="./index.html#home" class="nav-link">Trang Chủ</a></li>
+                    <li><a href="./index.html#about" class="nav-link">Giới Thiệu</a></li>
+                    <li><a href="./index.html#services" class="nav-link">Hoạt Động</a></li>
+                    <li><a href="./gallery.html" class="nav-link">Thư Viện</a></li>
+                    <li><a href="./charity-campaigns.html" class="nav-link active">Từ Thiện</a></li>
+                    <li><a href="./index.html#reviews" class="nav-link">Phản Hồi</a></li>
+                    <li><a href="./index.html#contact" class="nav-link">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="campaigns-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Các Chiến Dịch Từ Thiện</h1>
+                <p class="hero-subtitle">Cùng chung tay lan tỏa yêu thương</p>
+                <p class="hero-description">Mỗi đóng góp của bạn là một phần tạo nên sự thay đổi tích cực cho cộng đồng. Hãy cùng Chùa Kỳ Viên mang lại niềm vui và hy vọng đến những hoàn cảnh khó khăn.</p>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Campaigns Filter -->
+        <section class="campaigns-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-status="all">Tất Cả</button>
+                    <button class="filter-btn" data-status="active">Đang Diễn Ra</button>
+                    <button class="filter-btn" data-status="completed">Đã Hoàn Thành</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campaigns List -->
+        <section class="campaigns-list">
+            <div class="container">
+                <div id="campaignsGrid" class="campaigns-grid">
+                    <!-- Campaigns will be loaded from JSON -->
+                </div>
+                <div id="noCampaigns" class="no-campaigns" style="display: none;">
+                    <p>Không tìm thấy chiến dịch nào.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-brand">
+                            <span class="logo">🛕</span>
+                            <span class="brand-name">Chùa Kỳ Viên</span>
+                        </div>
+                        <p class="footer-description">Nơi tâm linh thanh tịnh, an lạc bình yên. Tu tập, học hỏi và thực hành Phật pháp trong
+                            cuộc sống.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Liên Kết</h3>
+                        <ul class="footer-links">
+                            <li><a href="./index.html#home">Trang Chủ</a></li>
+                            <li><a href="./index.html#about">Giới Thiệu</a></li>
+                            <li><a href="./index.html#services">Hoạt Động</a></li>
+                            <li><a href="./gallery.html">Thư Viện</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Hoạt Động</h3>
+                        <ul class="footer-links">
+                            <li><a href="./index.html#services">Lễ Phật</a></li>
+                            <li><a href="./index.html#services">Thiền Định</a></li>
+                            <li><a href="./index.html#services">Học Phật Pháp</a></li>
+                            <li><a href="./charity-campaigns.html">Từ Thiện</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Liên Hệ</h3>
+                        <ul class="footer-contact" style="list-style: none; padding-left: 0;">
+                            <li> 📞 Phone: <a href="tel:0375595720" style="text-decoration: none;">037 559 5720</a></li>
+                            <li> 📧 Email: <a href="mailto:kyvietuthien@gmail.com" style="text-decoration: none;">kyvietuthien@gmail.com</a>
+                            </li>
+                            <li> 🌐 Website: <a href="https://www.kyvienpagoda.com" style="text-decoration: none;">www.kyvienpagoda.com</a>
+                            </li>
+                            <li> ⏰ Thứ 2 - Chủ Nhật: 5:00 - 20:00</li>
+                            <li> 📍 Address: PP3J+PWR, QL55, Tân Xuân, Hàm Tân, Bình Thuận</li>
+                            <li> 📱 <a href="https://www.facebook.com/profile.php?id=100075950000520" target="_blank"
+                                    rel="noopener noreferrer" style="text-decoration: none;">Facebook</a></li>
+                            <li> 🗺️ <a href="https://maps.app.goo.gl/mevpSLkih2oHDYUV6" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none;">Google
+                                    Maps</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Chùa Kỳ Viên - Xã Tân Xuân. Nam Mô A Di Đà Phật.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+            ↑
+        </button>
+
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/charity-campaigns.js"></script>
+    </body>
+
+</html>
