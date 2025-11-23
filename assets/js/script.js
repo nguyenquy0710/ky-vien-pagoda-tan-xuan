@@ -445,7 +445,7 @@ async function loadReviews() {
     }
 
     try {
-        const response = await fetch('/data/feedback-buddhist-followers.json');
+        const response = await fetch('data/feedback-buddhist-followers.json');
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
