@@ -26,30 +26,6 @@
     },
     {
       "id": "campaign-002",
-      "title": "Xuân Yêu Thương - Chăm Sóc Người Già",
-      "description": "Chương trình chăm sóc sức khỏe, tặng quà và tổ chức các hoạt động vui chơi cho người già tại viện dưỡng lão và người già neo đơn.",
-      "shortDescription": "Chăm sóc sức khỏe người già neo đơn",
-      "startDate": "2025-01-20",
-      "endDate": "2025-03-30",
-      "targetAmount": 150000000,
-      "currentAmount": 95000000,
-      "beneficiaries": 300,
-      "status": "completed",
-      "imageUrl": "",
-      "location": "Bình Thuận và các tỉnh lân cận",
-      "activities": [
-        "Khám bệnh, cấp thuốc miễn phí cho 200 người già",
-        "Tặng quà Tết cho 300 người già neo đơn",
-        "Tổ chức văn nghệ, giao lưu tại các viện dưỡng lão"
-      ],
-      "highlights": [
-        "Đội ngũ bác sĩ tình nguyện tham gia",
-        "Quà tặng bao gồm tiền mặt và nhu yếu phẩm",
-        "Mang niềm vui đến người cao tuổi"
-      ]
-    },
-    {
-      "id": "campaign-003",
       "title": "Cứu Trợ Lũ Lụt Miền Trung – Phú Yên",
       "description": "Chiến dịch kêu gọi Phật tử và các nhà hảo tâm chung tay hỗ trợ bà con vùng lũ tại Phú Yên đang chịu thiệt hại nặng nề sau mưa lũ. Quyên góp nhu yếu phẩm thiết yếu như gạo, mì gói, sữa, mùng, mền và bao thư hỗ trợ bà con trong lúc khó khăn.",
       "shortDescription": "Kêu gọi chung tay hỗ trợ nhu yếu phẩm và tài chính giúp bà con Phú Yên vượt qua khó khăn sau mưa lũ.",
@@ -59,7 +35,7 @@
       "currentAmount": 0,
       "beneficiaries": 500,
       "status": "active",
-      "imageUrl": "./uploads/campaign-003-cuu-tro-lu-lut-mien-trung-phu-yen.jpg",
+      "imageUrl": "./uploads/campaign-002-cuu-tro-lu-lut-mien-trung-phu-yen.jpg",
       "location": "Phú Yên, Miền Trung",
       "activities": [
         "Phát 500 phần quà cứu trợ cho các hộ dân bị ảnh hưởng do lũ lụt",
