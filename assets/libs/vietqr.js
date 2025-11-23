@@ -157,35 +157,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Lấy danh sách ngân hàng
-    const banks = await api.getBanks();
-    console.log('Banks:', banks);
+    // const banks = await api.getBanks();
+    // console.log('Banks:', banks);
 
     // Tra cứu tài khoản
-    try {
-      const result = await api.lookupAccount(970415, '113366668888');
-      console.log('Account lookup result:', result);
-      // Ví dụ: result.accountName
-    } catch (err) {
-      console.error('Lookup failed:', err);
-    }
+    // try {
+    //   const result = await api.lookupAccount(970415, '113366668888');
+    //   console.log('Account lookup result:', result);
+    //   // Ví dụ: result.accountName
+    // } catch (err) {
+    //   console.error('Lookup failed:', err);
+    // }
 
     // Tạo mã QR chuyển tiền
-    try {
-      const qr = await api.generateQR({
-        accountNo: '113366668888',
-        accountName: 'QUY VAC XIN PHONG CHONG COVID',
-        acqId: 970415,
-        amount: 79000,
-        addInfo: 'Ung Ho Quy Vac Xin',
-        template: 'compact',
-        format: 'text',
-      });
+    // try {
+    //   const qr = await api.generateQR({
+    //     accountNo: '113366668888',
+    //     accountName: 'QUY VAC XIN PHONG CHONG COVID',
+    //     acqId: 970415,
+    //     amount: 79000,
+    //     addInfo: 'Ung Ho Quy Vac Xin',
+    //     template: 'compact',
+    //     format: 'text',
+    //   });
 
-      console.log('QR Result:', qr);
-      // qr.qrCode: payload text
-      // qr.qrDataURL: ảnh QR dạng data URI (base64)
-    } catch (err) {
-      console.error('Không tạo được QR:', err);
-    }
+    //   console.log('QR Result:', qr);
+    //   // qr.qrCode: payload text
+    //   // qr.qrDataURL: ảnh QR dạng data URI (base64)
+    // } catch (err) {
+    //   console.error('Không tạo được QR:', err);
+    // }
   })();
 });
