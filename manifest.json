@@ -1,0 +1,25 @@
+{
+  "name": "Chùa Kỳ Viên - Xã Tân Xuân",
+  "short_name": "Chùa Kỳ Viên",
+  "description": "Nơi tâm linh thanh tịnh - An lạc bình yên. Ngôi chùa cổ kính tại xã Tân Xuân - Nơi tu tập, cầu nguyện và tìm hiểu giáo pháp Đức Phật.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8e1",
+  "theme_color": "#ffa726",
+  "orientation": "portrait-primary",
+  "lang": "vi",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛕</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["religion", "lifestyle", "education"],
+  "screenshots": [],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
