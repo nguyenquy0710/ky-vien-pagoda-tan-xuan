@@ -2,6 +2,31 @@
 let allCampaigns = [];
 let currentFilter = 'all';
 
+// Utility to get random color for placeholder images (if needed)
+function getRandomColor() {
+    // Tạo màu hex ngẫu nhiên (RRGGBB)
+    const letters = "0123456789ABCDEF";
+    let color = "";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+/**
+ * Generate random placeholder image URL with random bg and fg colors and custom text
+ * @param {*} text Text to display on the placeholder image
+ * @returns {string} URL of the generated placeholder image
+ */
+function getRandomPlaceholdURL(text = "Demo") {
+    let bg = getRandomColor();
+    if (bg.toLowerCase() === '4CAF50'.toLowerCase()) {
+        bg = getRandomColor();
+    }
+    const fg = getRandomColor();
+    return `https://placehold.co/800x600/${bg}/${fg}?text=${encodeURIComponent(text)}`;
+}
+
 // HTML escape function to prevent XSS
 function escapeHtml(unsafe) {
     return unsafe
@@ -12,42 +37,72 @@ function escapeHtml(unsafe) {
         .replace(/'/g, "&#039;");
 }
 
-// Load campaigns from JSON
+/**
+ * Load campaigns from JSON file
+ */
 async function loadCampaigns() {
     try {
         const response = await fetch('./data/charity-campaigns.json');
         const data = await response.json();
         allCampaigns = data.campaigns;
+
+        // Thứ tự ưu tiên trạng thái
+        const statusOrder = {
+            'active': 1,
+            'pending': 2,
+            'completed': 3
+        };
+
+        // Sắp xếp
+        allCampaigns.sort((a, b) => {
+            // Ưu tiên status trước
+            const statusDiff = statusOrder[a.status] - statusOrder[b.status];
+            if (statusDiff !== 0) return statusDiff;
+
+            // Nếu status giống nhau, sắp theo startDate giảm dần
+            return new Date(b.startDate) - new Date(a.startDate);
+        });
+
+        // Hiển thị tất cả chiến dịch ban đầu (lọc theo trạng thái "all")
         displayCampaigns(allCampaigns);
     } catch (error) {
         console.error('Error loading campaigns:', error);
+
+        // Hiển thị thông báo không có chiến dịch nếu có lỗi
         showNoCampaignsMessage();
     }
 }
 
-// Display campaigns based on filter
+/**
+ * Display campaigns in the grid
+ * @param {*} campaigns Array of campaign objects to display
+ * @returns {void}
+ */
 function displayCampaigns(campaigns) {
     const grid = document.getElementById('campaignsGrid');
     const noCampaigns = document.getElementById('noCampaigns');
-    
+
     if (!campaigns || campaigns.length === 0) {
         grid.innerHTML = '';
         noCampaigns.style.display = 'block';
         return;
     }
-    
+
+    // Hide no campaigns message if campaigns exist
     noCampaigns.style.display = 'none';
-    
+
+    // Generate HTML for each campaign and insert into grid container
     grid.innerHTML = campaigns.map(campaign => {
         const percentage = (campaign.currentAmount / campaign.targetAmount * 100).toFixed(0);
         const statusClass = campaign.status === 'active' ? 'status-active' : 'status-completed';
         const statusText = campaign.status === 'active' ? 'Đang diễn ra' : 'Đã hoàn thành';
         const safeCampaignId = encodeURIComponent(campaign.id);
-        
+        const safeImageUrl = `${(campaign.imageUrl || getRandomPlaceholdURL(campaign.title)).trim()}`;
+
         return `
-            <div class="campaign-card" data-status="${escapeHtml(campaign.status)}">
+            <div class="campaign-card" data-id="${escapeHtml(safeCampaignId)}" data-status="${escapeHtml(campaign.status)}">
                 <div class="campaign-image">
-                    <img src="${escapeHtml(campaign.image)}" alt="${escapeHtml(campaign.title)}" loading="lazy">
+                    <img src="${safeImageUrl}" alt="${escapeHtml(campaign.title)}" loading="lazy">
                     <div class="campaign-status ${statusClass}">
                         ${statusText}
                     </div>
@@ -96,7 +151,7 @@ function displayCampaigns(campaigns) {
 // Filter campaigns
 function filterCampaigns(status) {
     currentFilter = status;
-    
+
     // Update active button
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.remove('active');
@@ -104,7 +159,7 @@ function filterCampaigns(status) {
             btn.classList.add('active');
         }
     });
-    
+
     // Filter campaigns
     if (status === 'all') {
         displayCampaigns(allCampaigns);
@@ -143,7 +198,7 @@ function openDonationModal() {
 document.addEventListener('DOMContentLoaded', () => {
     // Load campaigns
     loadCampaigns();
-    
+
     // Add filter button listeners
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {

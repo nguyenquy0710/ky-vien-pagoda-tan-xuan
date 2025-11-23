@@ -462,6 +462,6 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Console message
-console.log('%c🍊 Chùa Kỳ Viên - Xã Tân Xuân 🍊', 'color: #ff9800; font-size: 24px; font-weight: bold;');
+console.log('%c🛕 Chùa Kỳ Viên - Xã Tân Xuân 🛕', 'color: #ff9800; font-size: 24px; font-weight: bold;');
 console.log('%cChào mừng bạn đến với website của chúng tôi!', 'color: #2e7d32; font-size: 16px;');
 console.log('%cTrải nghiệm thiên nhiên miệt vườn đích thực 🌳', 'color: #66bb6a; font-size: 14px;');

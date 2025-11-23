@@ -20,22 +20,22 @@ function getCampaignIdFromUrl() {
 // Load campaign detail
 async function loadCampaignDetail() {
     const campaignId = getCampaignIdFromUrl();
-    
+
     if (!campaignId) {
         showCampaignNotFound();
         return;
     }
-    
+
     try {
         const response = await fetch('./data/charity-campaigns.json');
         const data = await response.json();
         const campaign = data.campaigns.find(c => c.id === campaignId);
-        
+
         if (!campaign) {
             showCampaignNotFound();
             return;
         }
-        
+
         currentCampaign = campaign;
         displayCampaignDetail(campaign);
         updateMetaTags(campaign);
@@ -51,15 +51,17 @@ function displayCampaignDetail(campaign) {
     const percentage = (campaign.currentAmount / campaign.targetAmount * 100).toFixed(0);
     const statusClass = campaign.status === 'active' ? 'status-active' : 'status-completed';
     const statusText = campaign.status === 'active' ? 'Đang diễn ra' : 'Đã hoàn thành';
-    
+    const safeCampaignId = encodeURIComponent(campaign.id);
+    const safeImageUrl = `${(campaign.imageUrl || getRandomPlaceholdURL(campaign.title)).trim()}`;
+
     // Format dates
     const startDate = new Date(campaign.startDate).toLocaleDateString('vi-VN');
     const endDate = new Date(campaign.endDate).toLocaleDateString('vi-VN');
-    
+
     content.innerHTML = `
         <div class="campaign-header">
             <div class="campaign-header-image">
-                <img src="${escapeHtml(campaign.image)}" alt="${escapeHtml(campaign.title)}" loading="lazy">
+                <img src="${safeImageUrl}" alt="${escapeHtml(campaign.title)}" loading="lazy">
                 <div class="campaign-status-badge ${statusClass}">
                     ${statusText}
                 </div>
@@ -185,14 +187,14 @@ function displayCampaignDetail(campaign) {
             </div>
         </div>
     `;
-    
+
     // Update breadcrumb
     document.getElementById('breadcrumbTitle').textContent = campaign.title;
-    
+
     // Add event listener for donate button if it exists
     const donateButton = document.getElementById('donateButton');
     if (donateButton) {
-        donateButton.addEventListener('click', function() {
+        donateButton.addEventListener('click', function () {
             const campaignTitle = this.getAttribute('data-campaign-title');
             openDonationModalWithCampaign(campaignTitle);
         });
@@ -228,7 +230,7 @@ function formatCurrency(amount) {
 function openDonationModalWithCampaign(campaignTitle) {
     const modal = document.getElementById('donationModal');
     const contentElement = document.getElementById('donationContent');
-    
+
     if (modal) {
         if (contentElement) {
             // Safely set text content (automatically escapes HTML)
@@ -263,18 +265,18 @@ function showToast(message) {
     if (existingToast) {
         existingToast.remove();
     }
-    
+
     // Create toast element
     const toast = document.createElement('div');
     toast.className = 'toast-notification';
     toast.textContent = message;
     document.body.appendChild(toast);
-    
+
     // Show toast
     setTimeout(() => {
         toast.classList.add('show');
     }, 10);
-    
+
     // Hide and remove toast after 3 seconds
     setTimeout(() => {
         toast.classList.remove('show');

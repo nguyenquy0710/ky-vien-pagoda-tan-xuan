@@ -11,7 +11,7 @@
       "currentAmount": 350000000,
       "beneficiaries": 1000,
       "status": "active",
-      "image": "https://via.placeholder.com/800x600/FFA726/FFFFFF?text=Tết+An+Lạc",
+      "imageUrl": "https://placehold.co/800x600/FFA726/FFFFFF?text=Tết+An+Lạc",
       "location": "Hàm Tân, Bình Thuận",
       "activities": [
         "Trao quà Tết gồm gạo, dầu ăn, mì tôm cho 500 gia đình nghèo",
@@ -35,7 +35,7 @@
       "currentAmount": 180000000,
       "beneficiaries": 200,
       "status": "active",
-      "image": "https://via.placeholder.com/800x600/FF9933/FFFFFF?text=Học+Bổng",
+      "imageUrl": "https://placehold.co/800x600/FF9933/FFFFFF?text=Học+Bổng",
       "location": "Bình Thuận và các tỉnh lân cận",
       "activities": [
         "Trao 100 suất học bổng 2.000.000đ cho học sinh THPT",
@@ -60,7 +60,7 @@
       "currentAmount": 200000000,
       "beneficiaries": 800,
       "status": "completed",
-      "image": "https://via.placeholder.com/800x600/D4AF37/FFFFFF?text=Áo+Ấm+Mùa+Đông",
+      "imageUrl": "https://placehold.co/800x600/D4AF37/FFFFFF?text=Áo+Ấm+Mùa+Đông",
       "location": "Vùng cao Lâm Đồng, Đà Lạt",
       "activities": [
         "Trao 500 áo khoác ấm cho người già và trẻ em",
@@ -84,7 +84,7 @@
       "currentAmount": 450000000,
       "beneficiaries": 20,
       "status": "active",
-      "image": "https://via.placeholder.com/800x600/C41E3A/FFFFFF?text=Nhà+Tình+Thương",
+      "imageUrl": "https://placehold.co/800x600/C41E3A/FFFFFF?text=Nhà+Tình+Thương",
       "location": "Hàm Tân, Bình Thuận",
       "activities": [
         "Xây mới 10 căn nhà cho hộ nghèo",
@@ -108,7 +108,7 @@
       "currentAmount": 95000000,
       "beneficiaries": 300,
       "status": "active",
-      "image": "https://via.placeholder.com/800x600/8B4513/FFFFFF?text=Xuân+Yêu+Thương",
+      "imageUrl": "https://placehold.co/800x600/8B4513/FFFFFF?text=Xuân+Yêu+Thương",
       "location": "Bình Thuận và các tỉnh lân cận",
       "activities": [
         "Khám bệnh, cấp thuốc miễn phí cho 200 người già",
@@ -132,7 +132,7 @@
       "currentAmount": 120000000,
       "beneficiaries": 500,
       "status": "active",
-      "image": "https://via.placeholder.com/800x600/4CAF50/FFFFFF?text=Nước+Sạch",
+      "imageUrl": "https://placehold.co/800x600/E38E6A/FFFFFF?text=Nước+Sạch",
       "location": "Các xã vùng sâu Bình Thuận",
       "activities": [
         "Khoan 20 giếng nước sạch cho các hộ dân",
@@ -143,6 +143,30 @@
         "Mỗi giếng phục vụ 20-30 hộ dân",
         "Giải quyết vấn đề nước sạch lâu dài",
         "Cải thiện điều kiện sinh hoạt"
+      ]
+    },
+    {
+      "id": "campaign-007",
+      "title": "Cứu Trợ Lũ Lụt Miền Trung – Phú Yên",
+      "description": "Chiến dịch kêu gọi Phật tử và các nhà hảo tâm chung tay hỗ trợ bà con vùng lũ tại Phú Yên đang chịu thiệt hại nặng nề sau mưa lũ. Quyên góp nhu yếu phẩm thiết yếu như gạo, mì gói, sữa, mùng, mền và bao thư hỗ trợ bà con trong lúc khó khăn.",
+      "shortDescription": "Hỗ trợ khẩn cấp cho bà con vùng lũ Phú Yên",
+      "startDate": "2025-11-22",
+      "endDate": "2025-12-12",
+      "targetAmount": 500000000,
+      "currentAmount": 0,
+      "beneficiaries": 500,
+      "status": "active",
+      "imageUrl": "./uploads/campaign-001-cuu-tro-lu-lut-mien-trung-phu-yen.jpg",
+      "location": "Phú Yên, Miền Trung",
+      "activities": [
+        "Phát 500 phần quà cứu trợ cho các hộ dân bị ảnh hưởng do lũ lụt",
+        "Hỗ trợ gạo, mì tôm, sữa, nhu yếu phẩm thiết yếu",
+        "Trao bao thư và quà đến tận tay bà con"
+      ],
+      "highlights": [
+        "Hỗ trợ khẩn cấp sau thiên tai",
+        "Mỗi phần quà bao gồm nhiều nhu yếu phẩm thiết thực",
+        "Ưu tiên các hộ khó khăn và thiệt hại nặng"
       ]
     }
   ]
