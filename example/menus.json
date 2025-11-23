@@ -1,0 +1,118 @@
+{
+  "mainMenu": [
+    {
+      "id": "home",
+      "label": "Trang Chủ",
+      "url": "#home",
+      "urlExternal": "./index.html#home",
+      "hasDropdown": false
+    },
+    {
+      "id": "about",
+      "label": "Giới Thiệu",
+      "url": "#about",
+      "urlExternal": "./index.html#about",
+      "hasDropdown": false
+    },
+    {
+      "id": "services",
+      "label": "Hoạt Động",
+      "url": "#services",
+      "urlExternal": "./index.html#services",
+      "hasDropdown": true,
+      "submenu": [
+        {
+          "id": "le-phat",
+          "label": "Lễ Phật",
+          "url": "#services",
+          "urlExternal": "./index.html#services"
+        },
+        {
+          "id": "thien-dinh",
+          "label": "Thiền Định",
+          "url": "#services",
+          "urlExternal": "./index.html#services"
+        },
+        {
+          "id": "hoc-phat-phap",
+          "label": "Học Phật Pháp",
+          "url": "#services",
+          "urlExternal": "./index.html#services"
+        },
+        {
+          "id": "charity",
+          "label": "Từ Thiện",
+          "url": "./charity-campaigns.html",
+          "urlExternal": "./charity-campaigns.html"
+        }
+      ]
+    },
+    {
+      "id": "gallery",
+      "label": "Thư Viện",
+      "url": "./gallery.html",
+      "urlExternal": "./gallery.html",
+      "hasDropdown": false
+    },
+    {
+      "id": "reviews",
+      "label": "Phản Hồi",
+      "url": "#reviews",
+      "urlExternal": "./index.html#reviews",
+      "hasDropdown": false
+    },
+    {
+      "id": "contact",
+      "label": "Liên Hệ",
+      "url": "#contact",
+      "urlExternal": "./index.html#contact",
+      "hasDropdown": false
+    }
+  ],
+  "footerMenu": {
+    "links": [
+      {
+        "label": "Trang Chủ",
+        "url": "#home",
+        "urlExternal": "./index.html#home"
+      },
+      {
+        "label": "Giới Thiệu",
+        "url": "#about",
+        "urlExternal": "./index.html#about"
+      },
+      {
+        "label": "Hoạt Động",
+        "url": "#services",
+        "urlExternal": "./index.html#services"
+      },
+      {
+        "label": "Thư Viện",
+        "url": "./gallery.html",
+        "urlExternal": "./gallery.html"
+      }
+    ],
+    "activities": [
+      {
+        "label": "Lễ Phật",
+        "url": "#services",
+        "urlExternal": "./index.html#services"
+      },
+      {
+        "label": "Thiền Định",
+        "url": "#services",
+        "urlExternal": "./index.html#services"
+      },
+      {
+        "label": "Học Phật Pháp",
+        "url": "#services",
+        "urlExternal": "./index.html#services"
+      },
+      {
+        "label": "Từ Thiện",
+        "url": "./charity-campaigns.html",
+        "urlExternal": "./charity-campaigns.html"
+      }
+    ]
+  }
+}
