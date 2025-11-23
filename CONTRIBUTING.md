@@ -1,6 +1,6 @@
 # 🤝 Hướng Dẫn Đóng Góp
 
-Cảm ơn bạn đã quan tâm đến dự án **Vườn Trái Cây Ông Sang**! Chúng tôi rất hoan nghênh mọi đóng góp từ cộng đồng để cải thiện và phát triển website này.
+Cảm ơn bạn đã quan tâm đến dự án **Chùa Kỳ Viên - Xã Tân Xuân**! Chúng tôi rất hoan nghênh mọi đóng góp từ cộng đồng để cải thiện và phát triển website này.
 
 ## 📋 Mục Lục
 
@@ -17,7 +17,7 @@ Cảm ơn bạn đã quan tâm đến dự án **Vườn Trái Cây Ông Sang**!
 
 ## 🌟 Giới Thiệu
 
-Dự án này là website tĩnh cho **Vườn Trái Cây Ông Sang**, một điểm đến du lịch sinh thái miệt vườn tại Bình Thuận, Việt Nam. Website được xây dựng với HTML, CSS và JavaScript thuần túy, không sử dụng framework phức tạp, giúp dễ dàng bảo trì và triển khai.
+Dự án này là website tĩnh cho **Chùa Kỳ Viên - Xã Tân Xuân**, một ngôi chùa cổ kính và linh thiêng tại Hóc Môn, TP. Hồ Chí Minh, Việt Nam. Website được xây dựng với HTML, CSS và JavaScript thuần túy, không sử dụng framework phức tạp, giúp dễ dàng bảo trì và triển khai.
 
 ### Công Nghệ Sử Dụng
 - HTML5
