@@ -22,7 +22,83 @@
         "Hơn 1000 gia đình được hỗ trợ",
         "Giá trị mỗi phần quà 500.000đ",
         "Đặc biệt chăm lo người già neo đơn"
-      ]
+      ],
+      "detailedInfo": {
+        "generalInfo": {
+          "organizer": "Chùa Kỳ Viên (Giáo hội Phật giáo Việt Nam)",
+          "templeAddress": "QL55, xã Hàm Tân, tỉnh Lâm Đồng",
+          "representative": "Đại đức Thích Chúc Thiện (Trụ trì)",
+          "fundraisingPeriod": "22/11/2025 – 12/12/2025",
+          "reliefTripDate": "Ngày 12/12/2025 đoàn sẽ về Phú Yên"
+        },
+        "purposeAndContext": {
+          "context": "Các tỉnh miền Trung (Khánh Hòa, Đắk Lắk, Gia Lai, Bình Định và tâm điểm là Phú Yên) đang gánh chịu hậu quả nặng nề của lũ quét. Bà con vùng trũng thấp bị ngập lụt, mất mát tài sản, sống trong cảnh màn trời chiếu đất, thiếu thốn lương thực và nước sạch.",
+          "objective": "Kêu gọi ủng hộ 500 phần quà để san sẻ khó khăn, giúp bà con vượt qua lúc nguy nan và khắc phục hậu quả sau lũ."
+        },
+        "giftPackageDetails": [
+          {
+            "item": "Gạo",
+            "quantity": "10kg",
+            "total": "500 phần"
+          },
+          {
+            "item": "Mì tôm",
+            "quantity": "1 thùng",
+            "total": "500 thùng"
+          },
+          {
+            "item": "Nước suối",
+            "quantity": "1 chai (loại lớn hoặc lốc)",
+            "total": "500 chai"
+          },
+          {
+            "item": "Sữa",
+            "quantity": "1 hộp",
+            "total": "500 hộp"
+          },
+          {
+            "item": "Sườn chay",
+            "quantity": "1 hộp",
+            "total": "500 hộp"
+          },
+          {
+            "item": "Mùng (Màn)",
+            "quantity": "1 cái",
+            "total": "500 cái"
+          },
+          {
+            "item": "Mền (Chăn)",
+            "quantity": "1 cái",
+            "total": "500 cái"
+          },
+          {
+            "item": "Phong bì tiền mặt",
+            "quantity": "500.000đ",
+            "total": "500 bao thư"
+          }
+        ],
+        "contactInfo": {
+          "bankTransfer": {
+            "accountNumber": "037 5595 720",
+            "bank": "VP Bank",
+            "accountHolder": "Nguyễn Minh Tín"
+          },
+          "phoneNumbers": [
+            {
+              "name": "Thầy Thiện",
+              "number": "037 5595 720"
+            },
+            {
+              "name": "Anh Phong",
+              "number": "098 574 7373"
+            },
+            {
+              "name": "Cô Diệu Hiền",
+              "number": "0372 170 728"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "campaign-002",
