@@ -230,12 +230,19 @@ function formatCurrency(amount) {
 function openDonationModalWithCampaign(campaignTitle) {
     const modal = document.getElementById('donationModal');
     const contentElement = document.getElementById('donationContent');
+    const qrCodeElement = document.getElementById('donationQRCode');
 
     if (modal) {
         if (contentElement) {
             // Safely set text content (automatically escapes HTML)
             contentElement.textContent = `${campaignTitle} - Chùa Kỳ Viên`;
         }
+
+        if (qrCodeElement) {
+            // Update QR code with campaign title in addInfo parameter to reflect the specific campaign being donated to
+            qrCodeElement.src = `https://img.vietqr.io/image/VPB-0375595720-compact2.png?accountName=${encodeURIComponent('Nguyễn Minh Tín')}&addInfo=${encodeURIComponent(`${campaignTitle} - Chùa Kỳ Viên`)}`;
+        }
+
         modal.classList.add('show');
         document.body.style.overflow = 'hidden';
     }
