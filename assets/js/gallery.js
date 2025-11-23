@@ -8,7 +8,7 @@ async function loadFlipbook() {
   }
 
   try {
-    const response = await fetch('/assets/images.json');
+    const response = await fetch('assets/images.json');
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
