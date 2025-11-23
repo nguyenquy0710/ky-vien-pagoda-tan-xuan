@@ -1,6 +1,7 @@
 {
     "reviews": [
         {
+            "id": 1,
             "author": {
                 "avatar": "👩",
                 "info": {
@@ -12,6 +13,7 @@
             "text": "\"Chùa rất thanh tịnh và yên bình. Thầy trụ trì và chư tăng rất từ bi, hướng dẫn nhiệt tình. Đến đây tôi cảm thấy tâm hồn được thanh lọc và nhẹ nhõm hơn rất nhiều.\""
         },
         {
+            "id": 2,
             "author": {
                 "avatar": "👨",
                 "info": {
@@ -23,6 +25,7 @@
             "text": "\"Không gian chùa rất thoáng mát và linh thiêng. Các khóa tu thiền ở đây rất bổ ích, giúp tôi tìm lại sự bình yên và học được nhiều điều từ Phật pháp.\""
         },
         {
+            "id": 3,
             "author": {
                 "avatar": "👩",
                 "info": {
@@ -34,6 +37,7 @@
             "text": "\"Chùa Kỳ Viên là nơi lý tưởng để tu tập và tìm hiểu Phật pháp. Các buổi pháp thoại rất hay, dễ hiểu và áp dụng được vào cuộc sống. Cảm ơn Thầy và Ban hộ trì!\""
         },
         {
+            "id": 4,
             "author": {
                 "avatar": "👨",
                 "info": {

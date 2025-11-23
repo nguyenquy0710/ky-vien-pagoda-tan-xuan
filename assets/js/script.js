@@ -438,7 +438,7 @@ function applyGalleryAnimations() {
 // Load and render reviews from JSON
 async function loadReviews() {
     const reviewsGrid = document.getElementById('reviewsGrid');
-    
+
     if (!reviewsGrid) {
         console.info('Reviews grid element not found');
         return;
@@ -478,6 +478,7 @@ async function loadReviews() {
 // Create a review card element from review data
 function createReviewCard(review) {
     // Validate and sanitize input data
+    const id = parseInt(review?.id ?? 0) || 0;
     const safeText = String(review.text || '').slice(0, 500);
     const safeAvatar = String(review.author?.avatar || '👤').slice(0, 10);
     const safeName = String(review.author?.info?.name || 'Anonymous').slice(0, 100);
@@ -486,6 +487,7 @@ function createReviewCard(review) {
 
     const card = document.createElement('div');
     card.className = 'review-card';
+    card.setAttribute('data-review-id', id);
 
     // Create stars element
     const starsDiv = document.createElement('div');
