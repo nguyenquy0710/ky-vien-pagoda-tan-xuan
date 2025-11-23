@@ -108,7 +108,7 @@ function displayCampaigns(campaigns) {
                     </div>
                 </div>
                 <div class="campaign-info">
-                    <h3 class="campaign-title">${escapeHtml(campaign.title)}</h3>
+                    <h3 class="campaign-title"><a href="./charity-campaign-detail.html?id=${safeCampaignId}" style="text-decoration: none; color: var(--text-dark);">${escapeHtml(campaign.title)}</a></h3>
                     <p class="campaign-description">${escapeHtml(campaign.shortDescription)}</p>
                     
                     <div class="campaign-location">
