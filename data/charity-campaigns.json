@@ -26,79 +26,6 @@
     },
     {
       "id": "campaign-002",
-      "title": "Thắp Sáng Ước Mơ - Học Bổng Cho Em",
-      "description": "Chiến dịch trao học bổng cho học sinh nghèo vượt khó, có hoàn cảnh khó khăn nhưng học giỏi, giúp các em có điều kiện tiếp tục việc học.",
-      "shortDescription": "Trao học bổng cho học sinh nghèo vượt khó",
-      "startDate": "2025-02-01",
-      "endDate": "2025-06-30",
-      "targetAmount": 300000000,
-      "currentAmount": 180000000,
-      "beneficiaries": 200,
-      "status": "completed",
-      "imageUrl": "./uploads/campaign-002-thap-sang-uoc-mo-hoc-bong-cho-em.jpg",
-      "location": "Bình Thuận và các tỉnh lân cận",
-      "activities": [
-        "Trao 100 suất học bổng 2.000.000đ cho học sinh THPT",
-        "Trao 50 suất học bổng 1.500.000đ cho học sinh THCS",
-        "Trao 50 suất học bổng 1.000.000đ cho học sinh tiểu học",
-        "Hỗ trợ sách vở, dụng cụ học tập"
-      ],
-      "highlights": [
-        "200 học sinh nghèo được hỗ trợ",
-        "Ưu tiên học sinh mồ côi, khó khăn",
-        "Theo dõi kết quả học tập hàng kỳ"
-      ]
-    },
-    {
-      "id": "campaign-003",
-      "title": "Áo Ấm Mùa Đông - Sưởi Ấm Vùng Cao",
-      "description": "Quyên góp và trao tặng áo ấm, chăn màn cho đồng bào vùng cao, nơi mùa đông giá rét khắc nghiệt.",
-      "shortDescription": "Trao áo ấm cho đồng bào vùng cao",
-      "startDate": "2024-11-01",
-      "endDate": "2025-01-31",
-      "targetAmount": 200000000,
-      "currentAmount": 200000000,
-      "beneficiaries": 800,
-      "status": "completed",
-      "imageUrl": "./uploads/campaign-003-ao-am-mua-dong-suoi-am-vung-cao.jpg",
-      "location": "Vùng cao Lâm Đồng, Đà Lạt",
-      "activities": [
-        "Trao 500 áo khoác ấm cho người già và trẻ em",
-        "Tặng 300 bộ chăn màn cho các gia đình khó khăn",
-        "Phát 200 bộ quần áo ấm cho học sinh vùng cao"
-      ],
-      "highlights": [
-        "Hoàn thành 100% mục tiêu",
-        "800 người được thụ hưởng",
-        "Trao tận tay đến từng hộ gia đình"
-      ]
-    },
-    {
-      "id": "campaign-004",
-      "title": "Nhà Tình Thương - Mái Ấm Cho Người Nghèo",
-      "description": "Xây dựng và sửa chữa nhà cho các hộ nghèo, người già neo đơn, gia đình có hoàn cảnh đặc biệt khó khăn.",
-      "shortDescription": "Xây nhà tình thương cho người nghèo",
-      "startDate": "2025-03-01",
-      "endDate": "2025-12-31",
-      "targetAmount": 1000000000,
-      "currentAmount": 450000000,
-      "beneficiaries": 20,
-      "status": "completed",
-      "imageUrl": "./uploads/campaign-004-nha-tinh-thuong-mai-am-cho-nguoi-ngheo.jpg",
-      "location": "Hàm Tân, Bình Thuận",
-      "activities": [
-        "Xây mới 10 căn nhà cho hộ nghèo",
-        "Sửa chữa, cải tạo 10 căn nhà xuống cấp",
-        "Mỗi căn nhà diện tích 30-40m², kiên cố"
-      ],
-      "highlights": [
-        "Chi phí mỗi căn khoảng 50 triệu đồng",
-        "Ưu tiên người già neo đơn, gia đình có trẻ em mồ côi",
-        "Bàn giao nhà trực tiếp cho các hộ"
-      ]
-    },
-    {
-      "id": "campaign-005",
       "title": "Xuân Yêu Thương - Chăm Sóc Người Già",
       "description": "Chương trình chăm sóc sức khỏe, tặng quà và tổ chức các hoạt động vui chơi cho người già tại viện dưỡng lão và người già neo đơn.",
       "shortDescription": "Chăm sóc sức khỏe người già neo đơn",
@@ -108,7 +35,7 @@
       "currentAmount": 95000000,
       "beneficiaries": 300,
       "status": "completed",
-      "imageUrl": "./uploads/campaign-005-xuan-yeu-thuong-cham-soc-nguoi-gia.jpg",
+      "imageUrl": "./uploads/campaign-002-xuan-yeu-thuong-cham-soc-nguoi-gia.jpg",
       "location": "Bình Thuận và các tỉnh lân cận",
       "activities": [
         "Khám bệnh, cấp thuốc miễn phí cho 200 người già",
@@ -122,41 +49,17 @@
       ]
     },
     {
-      "id": "campaign-006",
-      "title": "Nước Sạch Cho Bà Con - Giếng Nước Sạch",
-      "description": "Khoan giếng nước sạch cho các xã vùng sâu vùng xa, nơi người dân gặp khó khăn trong việc tiếp cận nguồn nước sạch.",
-      "shortDescription": "Khoan giếng nước sạch cho vùng khó khăn",
-      "startDate": "2025-02-15",
-      "endDate": "2025-08-31",
-      "targetAmount": 400000000,
-      "currentAmount": 120000000,
-      "beneficiaries": 500,
-      "status": "completed",
-      "imageUrl": "./uploads/campaign-006-nuoc-sach-cho-ba-con-gieng-nuoc-sach.jpg",
-      "location": "Các xã vùng sâu Bình Thuận",
-      "activities": [
-        "Khoan 20 giếng nước sạch cho các hộ dân",
-        "Xây dựng 5 bể chứa nước sạch cộng đồng",
-        "Hướng dẫn sử dụng và bảo quản nguồn nước"
-      ],
-      "highlights": [
-        "Mỗi giếng phục vụ 20-30 hộ dân",
-        "Giải quyết vấn đề nước sạch lâu dài",
-        "Cải thiện điều kiện sinh hoạt"
-      ]
-    },
-    {
-      "id": "campaign-007",
+      "id": "campaign-003",
       "title": "Cứu Trợ Lũ Lụt Miền Trung – Phú Yên",
       "description": "Chiến dịch kêu gọi Phật tử và các nhà hảo tâm chung tay hỗ trợ bà con vùng lũ tại Phú Yên đang chịu thiệt hại nặng nề sau mưa lũ. Quyên góp nhu yếu phẩm thiết yếu như gạo, mì gói, sữa, mùng, mền và bao thư hỗ trợ bà con trong lúc khó khăn.",
-      "shortDescription": "Hỗ trợ khẩn cấp cho bà con vùng lũ Phú Yên",
+      "shortDescription": "Kêu gọi chung tay hỗ trợ nhu yếu phẩm và tài chính giúp bà con Phú Yên vượt qua khó khăn sau mưa lũ.",
       "startDate": "2025-11-22",
       "endDate": "2025-12-12",
       "targetAmount": 500000000,
       "currentAmount": 0,
       "beneficiaries": 500,
       "status": "active",
-      "imageUrl": "./uploads/campaign-007-cuu-tro-lu-lut-mien-trung-phu-yen.jpg",
+      "imageUrl": "./uploads/campaign-003-cuu-tro-lu-lut-mien-trung-phu-yen.jpg",
       "location": "Phú Yên, Miền Trung",
       "activities": [
         "Phát 500 phần quà cứu trợ cho các hộ dân bị ảnh hưởng do lũ lụt",
