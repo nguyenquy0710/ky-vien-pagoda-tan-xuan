@@ -191,10 +191,10 @@ function showCampaignNotFound() {
 function updateMetaTags(campaign) {
     document.getElementById('pageTitle').textContent = `${campaign.title} | Chùa Kỳ Viên - Xã Tân Xuân`;
     document.getElementById('metaDescription').setAttribute('content', campaign.description);
-    document.getElementById('ogTitle').setAttribute('value', campaign.title);
-    document.getElementById('ogDescription').setAttribute('value', campaign.description);
-    document.getElementById('twitterTitle').setAttribute('value', campaign.title);
-    document.getElementById('twitterDescription').setAttribute('value', campaign.description);
+    document.getElementById('ogTitle').setAttribute('content', campaign.title);
+    document.getElementById('ogDescription').setAttribute('content', campaign.description);
+    document.getElementById('twitterTitle').setAttribute('content', campaign.title);
+    document.getElementById('twitterDescription').setAttribute('content', campaign.description);
 }
 
 // Format currency in Vietnamese
