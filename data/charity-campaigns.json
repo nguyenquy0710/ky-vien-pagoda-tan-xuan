@@ -10,7 +10,7 @@
       "targetAmount": 500000000,
       "currentAmount": 350000000,
       "beneficiaries": 1000,
-      "status": "active",
+      "status": "completed",
       "imageUrl": "./uploads/campaign-001-tet-an-lac-mang-xuan-ve-nha.jpg",
       "location": "Hàm Tân, Bình Thuận",
       "activities": [
@@ -34,7 +34,7 @@
       "targetAmount": 300000000,
       "currentAmount": 180000000,
       "beneficiaries": 200,
-      "status": "active",
+      "status": "completed",
       "imageUrl": "./uploads/campaign-002-thap-sang-uoc-mo-hoc-bong-cho-em.jpg",
       "location": "Bình Thuận và các tỉnh lân cận",
       "activities": [
@@ -83,7 +83,7 @@
       "targetAmount": 1000000000,
       "currentAmount": 450000000,
       "beneficiaries": 20,
-      "status": "active",
+      "status": "completed",
       "imageUrl": "./uploads/campaign-004-nha-tinh-thuong-mai-am-cho-nguoi-ngheo.jpg",
       "location": "Hàm Tân, Bình Thuận",
       "activities": [
@@ -107,7 +107,7 @@
       "targetAmount": 150000000,
       "currentAmount": 95000000,
       "beneficiaries": 300,
-      "status": "active",
+      "status": "completed",
       "imageUrl": "./uploads/campaign-005-xuan-yeu-thuong-cham-soc-nguoi-gia.jpg",
       "location": "Bình Thuận và các tỉnh lân cận",
       "activities": [
@@ -131,7 +131,7 @@
       "targetAmount": 400000000,
       "currentAmount": 120000000,
       "beneficiaries": 500,
-      "status": "active",
+      "status": "completed",
       "imageUrl": "./uploads/campaign-006-nuoc-sach-cho-ba-con-gieng-nuoc-sach.jpg",
       "location": "Các xã vùng sâu Bình Thuận",
       "activities": [
