@@ -11,7 +11,7 @@
       "currentAmount": 350000000,
       "beneficiaries": 1000,
       "status": "active",
-      "imageUrl": "https://placehold.co/800x600/FFA726/FFFFFF?text=Tết+An+Lạc",
+      "imageUrl": "./uploads/campaign-001-tet-an-lac-mang-xuan-ve-nha.jpg",
       "location": "Hàm Tân, Bình Thuận",
       "activities": [
         "Trao quà Tết gồm gạo, dầu ăn, mì tôm cho 500 gia đình nghèo",
@@ -35,7 +35,7 @@
       "currentAmount": 180000000,
       "beneficiaries": 200,
       "status": "active",
-      "imageUrl": "https://placehold.co/800x600/FF9933/FFFFFF?text=Học+Bổng",
+      "imageUrl": "./uploads/campaign-002-thap-sang-uoc-mo-hoc-bong-cho-em.jpg",
       "location": "Bình Thuận và các tỉnh lân cận",
       "activities": [
         "Trao 100 suất học bổng 2.000.000đ cho học sinh THPT",
@@ -60,7 +60,7 @@
       "currentAmount": 200000000,
       "beneficiaries": 800,
       "status": "completed",
-      "imageUrl": "https://placehold.co/800x600/D4AF37/FFFFFF?text=Áo+Ấm+Mùa+Đông",
+      "imageUrl": "./uploads/campaign-003-ao-am-mua-dong-suoi-am-vung-cao.jpg",
       "location": "Vùng cao Lâm Đồng, Đà Lạt",
       "activities": [
         "Trao 500 áo khoác ấm cho người già và trẻ em",
@@ -84,7 +84,7 @@
       "currentAmount": 450000000,
       "beneficiaries": 20,
       "status": "active",
-      "imageUrl": "https://placehold.co/800x600/C41E3A/FFFFFF?text=Nhà+Tình+Thương",
+      "imageUrl": "./uploads/campaign-004-nha-tinh-thuong-mai-am-cho-nguoi-ngheo.jpg",
       "location": "Hàm Tân, Bình Thuận",
       "activities": [
         "Xây mới 10 căn nhà cho hộ nghèo",
@@ -108,7 +108,7 @@
       "currentAmount": 95000000,
       "beneficiaries": 300,
       "status": "active",
-      "imageUrl": "https://placehold.co/800x600/8B4513/FFFFFF?text=Xuân+Yêu+Thương",
+      "imageUrl": "./uploads/campaign-005-xuan-yeu-thuong-cham-soc-nguoi-gia.jpg",
       "location": "Bình Thuận và các tỉnh lân cận",
       "activities": [
         "Khám bệnh, cấp thuốc miễn phí cho 200 người già",
@@ -132,7 +132,7 @@
       "currentAmount": 120000000,
       "beneficiaries": 500,
       "status": "active",
-      "imageUrl": "https://placehold.co/800x600/E38E6A/FFFFFF?text=Nước+Sạch",
+      "imageUrl": "./uploads/campaign-006-nuoc-sach-cho-ba-con-gieng-nuoc-sach.jpg",
       "location": "Các xã vùng sâu Bình Thuận",
       "activities": [
         "Khoan 20 giếng nước sạch cho các hộ dân",
@@ -156,7 +156,7 @@
       "currentAmount": 0,
       "beneficiaries": 500,
       "status": "active",
-      "imageUrl": "./uploads/campaign-001-cuu-tro-lu-lut-mien-trung-phu-yen.jpg",
+      "imageUrl": "./uploads/campaign-007-cuu-tro-lu-lut-mien-trung-phu-yen.jpg",
       "location": "Phú Yên, Miền Trung",
       "activities": [
         "Phát 500 phần quà cứu trợ cho các hộ dân bị ảnh hưởng do lũ lụt",
