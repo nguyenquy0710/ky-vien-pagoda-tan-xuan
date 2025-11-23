@@ -88,7 +88,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all sections and cards
 document.addEventListener('DOMContentLoaded', () => {
     // Add initial styles for animation (gallery-item excluded as they're loaded dynamically)
-    const animatedElements = document.querySelectorAll('.service-card, .review-card, .info-card');
+    const animatedElements = document.querySelectorAll('.service-card, .info-card');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -96,8 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Load gallery when DOM is ready
+    // Load gallery and reviews when DOM is ready
     loadGallery();
+    loadReviews();
 });
 
 
@@ -431,6 +432,109 @@ function applyGalleryAnimations() {
                 item.classList.add('zoomed');
             }
         });
+    });
+}
+
+// Load and render reviews from JSON
+async function loadReviews() {
+    const reviewsGrid = document.getElementById('reviewsGrid');
+    
+    if (!reviewsGrid) {
+        console.info('Reviews grid element not found');
+        return;
+    }
+
+    try {
+        const response = await fetch('/data/feedback-buddhist-followers.json');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // Clear existing content
+        reviewsGrid.replaceChildren();
+
+        // Create and append review cards
+        data.reviews.forEach(review => {
+            const reviewCard = createReviewCard(review);
+            reviewsGrid.appendChild(reviewCard);
+        });
+
+        // Re-apply intersection observer for new items
+        applyReviewsAnimations();
+
+    } catch (error) {
+        console.error('Error loading reviews:', error);
+        // Show user-friendly error message
+        const errorMsg = document.createElement('p');
+        errorMsg.className = 'gallery-error-message';
+        errorMsg.textContent = 'Không thể tải phản hồi từ phật tử. Vui lòng thử lại sau.';
+        reviewsGrid.replaceChildren(errorMsg);
+    }
+}
+
+// Create a review card element from review data
+function createReviewCard(review) {
+    // Validate and sanitize input data
+    const safeText = String(review.text || '').slice(0, 500);
+    const safeAvatar = String(review.author?.avatar || '👤').slice(0, 10);
+    const safeName = String(review.author?.info?.name || 'Anonymous').slice(0, 100);
+    const safeAddress = String(review.author?.info?.address || '').slice(0, 100);
+    const stars = Math.min(Math.max(parseInt(review.stars) || 5, 1), 5);
+
+    const card = document.createElement('div');
+    card.className = 'review-card';
+
+    // Create stars element
+    const starsDiv = document.createElement('div');
+    starsDiv.className = 'review-stars';
+    starsDiv.textContent = '⭐'.repeat(stars);
+
+    // Create review text
+    const textP = document.createElement('p');
+    textP.className = 'review-text';
+    textP.textContent = safeText;
+
+    // Create author section
+    const authorDiv = document.createElement('div');
+    authorDiv.className = 'review-author';
+
+    const avatarDiv = document.createElement('div');
+    avatarDiv.className = 'author-avatar';
+    avatarDiv.textContent = safeAvatar;
+
+    const infoDiv = document.createElement('div');
+    infoDiv.className = 'author-info';
+
+    const nameH4 = document.createElement('h4');
+    nameH4.textContent = `Phật tử ${safeName}`;
+
+    const addressP = document.createElement('p');
+    addressP.textContent = safeAddress;
+
+    infoDiv.appendChild(nameH4);
+    infoDiv.appendChild(addressP);
+
+    authorDiv.appendChild(avatarDiv);
+    authorDiv.appendChild(infoDiv);
+
+    card.appendChild(starsDiv);
+    card.appendChild(textP);
+    card.appendChild(authorDiv);
+
+    return card;
+}
+
+// Apply animations to review cards
+function applyReviewsAnimations() {
+    const reviewCards = document.querySelectorAll('.review-card');
+    reviewCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
     });
 }
 
