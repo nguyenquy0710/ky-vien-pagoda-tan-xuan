@@ -144,7 +144,8 @@ window.addEventListener('scroll', () => {
     const hero = document.querySelector('.hero');
     if (hero) {
         const scrolled = window.pageYOffset;
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        // console.info(`scroll -> .hero -> transform: translateY(${scrolled * 0.5}px)`);
+        // hero.style.transform = `translateY(${scrolled * 0.5}px)`;
     }
 });
 
@@ -194,7 +195,7 @@ async function loadGallery() {
     }
 
     if (!galleryGrid) {
-        console.error('Gallery grid element not found');
+        console.info('Gallery grid element not found');
         return;
     }
 
@@ -232,7 +233,7 @@ async function loadGallery() {
 // Load and initialize flipbook with pure JavaScript
 async function loadFlipbook() {
     const flipbook = document.getElementById('flipbook');
-    
+
     if (!flipbook) {
         console.error('Flipbook element not found');
         return;
@@ -268,7 +269,7 @@ async function loadFlipbook() {
             const safeAlt = String(image.alt || image.title || 'Gallery image').slice(0, 100);
             const safeSrc = String(image.src || '').slice(0, 500);
             const safeDescription = String(image.description || '').slice(0, 200);
-            
+
             page.innerHTML = `
                 <div class="page-content">
                     <img src="${safeSrc}" alt="${safeAlt}" loading="lazy" />
@@ -379,7 +380,7 @@ function createGalleryItem(image) {
     img.src = safeSrc;
     img.alt = safeAlt;
     img.loading = 'lazy'; // Enable lazy loading for performance
-    
+
     // Add error handling for images that fail to load
     img.addEventListener('error', () => {
         img.style.display = 'none';
@@ -388,7 +389,7 @@ function createGalleryItem(image) {
         placeholder.textContent = '🖼️ Không thể tải ảnh';
         item.appendChild(placeholder);
     });
-    
+
     // Create caption if title exists
     if (safeTitle) {
         const caption = document.createElement('div');
@@ -434,6 +435,6 @@ function applyGalleryAnimations() {
 }
 
 // Console message
-console.log('%c🍊 Vườn Trái Cây Ông Sang 🍊', 'color: #ff9800; font-size: 24px; font-weight: bold;');
+console.log('%c🍊 Chùa Kỳ Viên - Xã Tân Xuân 🍊', 'color: #ff9800; font-size: 24px; font-weight: bold;');
 console.log('%cChào mừng bạn đến với website của chúng tôi!', 'color: #2e7d32; font-size: 16px;');
 console.log('%cTrải nghiệm thiên nhiên miệt vườn đích thực 🌳', 'color: #66bb6a; font-size: 14px;');
