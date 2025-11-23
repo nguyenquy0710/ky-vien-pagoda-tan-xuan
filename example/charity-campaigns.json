@@ -1,0 +1,149 @@
+{
+  "campaigns": [
+    {
+      "id": "campaign-001",
+      "title": "Tết An Lạc - Mang Xuân Về Nhà",
+      "description": "Chiến dịch trao quà Tết cho người nghèo, người già neo đơn và trẻ em có hoàn cảnh khó khăn tại vùng sâu vùng xa.",
+      "shortDescription": "Trao quà Tết cho người nghèo và trẻ em khó khăn",
+      "startDate": "2025-01-15",
+      "endDate": "2025-02-10",
+      "targetAmount": 500000000,
+      "currentAmount": 350000000,
+      "beneficiaries": 1000,
+      "status": "active",
+      "image": "https://via.placeholder.com/800x600/FFA726/FFFFFF?text=Tết+An+Lạc",
+      "location": "Hàm Tân, Bình Thuận",
+      "activities": [
+        "Trao quà Tết gồm gạo, dầu ăn, mì tôm cho 500 gia đình nghèo",
+        "Phát 300 phần quà cho trẻ em mồ côi, khó khăn",
+        "Khám bệnh, cấp thuốc miễn phí cho 200 người già neo đơn"
+      ],
+      "highlights": [
+        "Hơn 1000 gia đình được hỗ trợ",
+        "Giá trị mỗi phần quà 500.000đ",
+        "Đặc biệt chăm lo người già neo đơn"
+      ]
+    },
+    {
+      "id": "campaign-002",
+      "title": "Thắp Sáng Ước Mơ - Học Bổng Cho Em",
+      "description": "Chiến dịch trao học bổng cho học sinh nghèo vượt khó, có hoàn cảnh khó khăn nhưng học giỏi, giúp các em có điều kiện tiếp tục việc học.",
+      "shortDescription": "Trao học bổng cho học sinh nghèo vượt khó",
+      "startDate": "2025-02-01",
+      "endDate": "2025-06-30",
+      "targetAmount": 300000000,
+      "currentAmount": 180000000,
+      "beneficiaries": 200,
+      "status": "active",
+      "image": "https://via.placeholder.com/800x600/FF9933/FFFFFF?text=Học+Bổng",
+      "location": "Bình Thuận và các tỉnh lân cận",
+      "activities": [
+        "Trao 100 suất học bổng 2.000.000đ cho học sinh THPT",
+        "Trao 50 suất học bổng 1.500.000đ cho học sinh THCS",
+        "Trao 50 suất học bổng 1.000.000đ cho học sinh tiểu học",
+        "Hỗ trợ sách vở, dụng cụ học tập"
+      ],
+      "highlights": [
+        "200 học sinh nghèo được hỗ trợ",
+        "Ưu tiên học sinh mồ côi, khó khăn",
+        "Theo dõi kết quả học tập hàng kỳ"
+      ]
+    },
+    {
+      "id": "campaign-003",
+      "title": "Áo Ấm Mùa Đông - Sưởi Ấm Vùng Cao",
+      "description": "Quyên góp và trao tặng áo ấm, chăn màn cho đồng bào vùng cao, nơi mùa đông giá rét khắc nghiệt.",
+      "shortDescription": "Trao áo ấm cho đồng bào vùng cao",
+      "startDate": "2024-11-01",
+      "endDate": "2025-01-31",
+      "targetAmount": 200000000,
+      "currentAmount": 200000000,
+      "beneficiaries": 800,
+      "status": "completed",
+      "image": "https://via.placeholder.com/800x600/D4AF37/FFFFFF?text=Áo+Ấm+Mùa+Đông",
+      "location": "Vùng cao Lâm Đồng, Đà Lạt",
+      "activities": [
+        "Trao 500 áo khoác ấm cho người già và trẻ em",
+        "Tặng 300 bộ chăn màn cho các gia đình khó khăn",
+        "Phát 200 bộ quần áo ấm cho học sinh vùng cao"
+      ],
+      "highlights": [
+        "Hoàn thành 100% mục tiêu",
+        "800 người được thụ hưởng",
+        "Trao tận tay đến từng hộ gia đình"
+      ]
+    },
+    {
+      "id": "campaign-004",
+      "title": "Nhà Tình Thương - Mái Ấm Cho Người Nghèo",
+      "description": "Xây dựng và sửa chữa nhà cho các hộ nghèo, người già neo đơn, gia đình có hoàn cảnh đặc biệt khó khăn.",
+      "shortDescription": "Xây nhà tình thương cho người nghèo",
+      "startDate": "2025-03-01",
+      "endDate": "2025-12-31",
+      "targetAmount": 1000000000,
+      "currentAmount": 450000000,
+      "beneficiaries": 20,
+      "status": "active",
+      "image": "https://via.placeholder.com/800x600/C41E3A/FFFFFF?text=Nhà+Tình+Thương",
+      "location": "Hàm Tân, Bình Thuận",
+      "activities": [
+        "Xây mới 10 căn nhà cho hộ nghèo",
+        "Sửa chữa, cải tạo 10 căn nhà xuống cấp",
+        "Mỗi căn nhà diện tích 30-40m², kiên cố"
+      ],
+      "highlights": [
+        "Chi phí mỗi căn khoảng 50 triệu đồng",
+        "Ưu tiên người già neo đơn, gia đình có trẻ em mồ côi",
+        "Bàn giao nhà trực tiếp cho các hộ"
+      ]
+    },
+    {
+      "id": "campaign-005",
+      "title": "Xuân Yêu Thương - Chăm Sóc Người Già",
+      "description": "Chương trình chăm sóc sức khỏe, tặng quà và tổ chức các hoạt động vui chơi cho người già tại viện dưỡng lão và người già neo đơn.",
+      "shortDescription": "Chăm sóc sức khỏe người già neo đơn",
+      "startDate": "2025-01-20",
+      "endDate": "2025-03-30",
+      "targetAmount": 150000000,
+      "currentAmount": 95000000,
+      "beneficiaries": 300,
+      "status": "active",
+      "image": "https://via.placeholder.com/800x600/8B4513/FFFFFF?text=Xuân+Yêu+Thương",
+      "location": "Bình Thuận và các tỉnh lân cận",
+      "activities": [
+        "Khám bệnh, cấp thuốc miễn phí cho 200 người già",
+        "Tặng quà Tết cho 300 người già neo đơn",
+        "Tổ chức văn nghệ, giao lưu tại các viện dưỡng lão"
+      ],
+      "highlights": [
+        "Đội ngũ bác sĩ tình nguyện tham gia",
+        "Quà tặng bao gồm tiền mặt và nhu yếu phẩm",
+        "Mang niềm vui đến người cao tuổi"
+      ]
+    },
+    {
+      "id": "campaign-006",
+      "title": "Nước Sạch Cho Bà Con - Giếng Nước Sạch",
+      "description": "Khoan giếng nước sạch cho các xã vùng sâu vùng xa, nơi người dân gặp khó khăn trong việc tiếp cận nguồn nước sạch.",
+      "shortDescription": "Khoan giếng nước sạch cho vùng khó khăn",
+      "startDate": "2025-02-15",
+      "endDate": "2025-08-31",
+      "targetAmount": 400000000,
+      "currentAmount": 120000000,
+      "beneficiaries": 500,
+      "status": "active",
+      "image": "https://via.placeholder.com/800x600/4CAF50/FFFFFF?text=Nước+Sạch",
+      "location": "Các xã vùng sâu Bình Thuận",
+      "activities": [
+        "Khoan 20 giếng nước sạch cho các hộ dân",
+        "Xây dựng 5 bể chứa nước sạch cộng đồng",
+        "Hướng dẫn sử dụng và bảo quản nguồn nước"
+      ],
+      "highlights": [
+        "Mỗi giếng phục vụ 20-30 hộ dân",
+        "Giải quyết vấn đề nước sạch lâu dài",
+        "Cải thiện điều kiện sinh hoạt"
+      ]
+    }
+  ]
+}

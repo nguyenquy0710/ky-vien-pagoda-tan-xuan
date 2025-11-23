@@ -1,3 +1,38 @@
+// Utility to get random color for placeholder images (if needed)
+function getRandomColor() {
+    // Tạo màu hex ngẫu nhiên (RRGGBB)
+    const letters = "0123456789ABCDEF";
+    let color = "";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+/**
+ * Generate random placeholder image URL with random bg and fg colors and custom text
+ * @param {*} text Text to display on the placeholder image
+ * @returns {string} URL of the generated placeholder image
+ */
+function getRandomPlaceholdURL(text = "Demo") {
+    let bg = getRandomColor();
+    if (bg.toLowerCase() === '4CAF50'.toLowerCase()) {
+        bg = getRandomColor();
+    }
+    const fg = getRandomColor();
+    return `https://placehold.co/800x600/${bg}/${fg}?text=${encodeURIComponent(text)}`;
+}
+
+// HTML escape function to prevent XSS
+function escapeHtml(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -32,7 +67,22 @@ document.addEventListener('click', (e) => {
     if (!e.target.closest('.navbar')) {
         navMenu.classList.remove('active');
         mobileMenuBtn.classList.remove('active');
+        // Close all dropdown menus
+        document.querySelectorAll('.nav-item-dropdown').forEach(item => {
+            item.classList.remove('active');
+        });
     }
+});
+
+// Handle mobile dropdown menu toggle
+document.querySelectorAll('.nav-item-dropdown > .nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const parent = link.parentElement;
+            parent.classList.toggle('active');
+        }
+    });
 });
 
 // Navbar scroll effect
@@ -447,6 +497,6 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Console message
-console.log('%c🍊 Chùa Kỳ Viên - Xã Tân Xuân 🍊', 'color: #ff9800; font-size: 24px; font-weight: bold;');
+console.log('%c🛕 Chùa Kỳ Viên - Xã Tân Xuân 🛕', 'color: #ff9800; font-size: 24px; font-weight: bold;');
 console.log('%cChào mừng bạn đến với website của chúng tôi!', 'color: #2e7d32; font-size: 16px;');
 console.log('%cTrải nghiệm thiên nhiên miệt vườn đích thực 🌳', 'color: #66bb6a; font-size: 14px;');

@@ -48,7 +48,15 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home" class="nav-link">Trang Chủ</a></li>
                     <li><a href="#about" class="nav-link">Giới Thiệu</a></li>
-                    <li><a href="#services" class="nav-link">Hoạt Động</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="#services" class="nav-link">Hoạt Động</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#services" class="dropdown-link">Lễ Phật</a></li>
+                            <li><a href="#services" class="dropdown-link">Thiền Định</a></li>
+                            <li><a href="#services" class="dropdown-link">Học Phật Pháp</a></li>
+                            <li><a href="./charity-campaigns.html" class="dropdown-link">Từ Thiện</a></li>
+                        </ul>
+                    </li>
                     <li><a href="./gallery.html" class="nav-link">Thư Viện</a></li>
                     <li><a href="#reviews" class="nav-link">Phản Hồi</a></li>
                     <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
@@ -175,7 +183,10 @@
                     </div>
                     <div class="service-card">
                         <div class="service-icon">💝</div>
-                        <h3 class="service-title">Từ Thiện</h3>
+                        <h3 class="service-title">
+                            <a href="./charity-campaigns.html" style="text-decoration: none; color: var(--primary-red);">Từ
+                                Thiện</a>
+                        </h3>
                         <p class="service-description">Tham gia các hoạt động từ thiện, phát quà, giúp đỡ người nghèo, người già, trẻ em mồ
                             côi và người khó khăn.</p>
                         <ul class="service-features">
@@ -313,7 +324,7 @@
                             <li><a href="#services">Lễ Phật</a></li>
                             <li><a href="#services">Thiền Định</a></li>
                             <li><a href="#services">Học Phật Pháp</a></li>
-                            <li><a href="#services">Từ Thiện</a></li>
+                            <li><a href="./charity-campaigns.html">Từ Thiện</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
@@ -345,6 +356,7 @@
             ↑
         </button>
 
+        <script src="./assets/js/menu-loader.js"></script>
         <script src="./assets/js/script.js"></script>
         <script src="./assets/vendor/vietqr.js" defer async></script>
     </body>
