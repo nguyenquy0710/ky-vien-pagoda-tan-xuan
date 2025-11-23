@@ -123,7 +123,8 @@ function showNoCampaignsMessage() {
 function openDonationModal() {
     const modal = document.getElementById('donationModal');
     if (modal) {
-        modal.style.display = 'flex';
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
     }
 }
 

@@ -214,7 +214,8 @@ function openDonationModalWithCampaign(campaignTitle) {
         if (contentElement) {
             contentElement.textContent = `${campaignTitle} - Chùa Kỳ Viên`;
         }
-        modal.style.display = 'flex';
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
     }
 }
 
