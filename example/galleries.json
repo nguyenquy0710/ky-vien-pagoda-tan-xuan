@@ -1,0 +1,22 @@
+{
+  "galleries": [
+    {
+      "title": "Chùa Kỳ Viên - Tân Xuân",
+      "description": "Hình ảnh về chùa Kỳ Viên tại Tân Xuân, Hàm Tân, Bình Thuận.",
+      "images": [
+        {
+          "url": "https://example.com/images/chua-ky-vien-1.jpg",
+          "caption": "Cổng chính chùa Kỳ Viên"
+        },
+        {
+          "url": "https://example.com/images/chua-ky-vien-2.jpg",
+          "caption": "Khuôn viên chùa với cây xanh"
+        },
+        {
+          "url": "https://example.com/images/chua-ky-vien-3.jpg",
+          "caption": "Bức tượng Phật bên trong chùa"
+        }
+      ]
+    }
+  ]
+}
