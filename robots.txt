@@ -1,0 +1,8 @@
+# Robots.txt for Chùa Kỳ Viên - Xã Tân Xuân
+# https://gist.quyit.id.vn/ky-vien-pagoda-tan-xuan/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://gist.quyit.id.vn/ky-vien-pagoda-tan-xuan/sitemap.xml

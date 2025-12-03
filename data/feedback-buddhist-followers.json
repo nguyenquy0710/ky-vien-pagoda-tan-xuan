@@ -1,0 +1,76 @@
+{
+    "reviews": [
+        {
+            "id": 1,
+            "author": {
+                "avatar": "👩",
+                "info": {
+                    "name": "Minh Anh",
+                    "address": "TP. Hồ Chí Minh"
+                }
+            },
+            "stars": 5,
+            "text": "\"Chùa rất thanh tịnh và yên bình. Thầy trụ trì và chư tăng rất từ bi, hướng dẫn nhiệt tình. Đến đây tôi cảm thấy tâm hồn được thanh lọc và nhẹ nhõm hơn rất nhiều.\""
+        },
+        {
+            "id": 2,
+            "author": {
+                "avatar": "👨",
+                "info": {
+                    "name": "Văn Minh",
+                    "address": "Hà Nội"
+                }
+            },
+            "stars": 5,
+            "text": "\"Không gian chùa rất thoáng mát và linh thiêng. Các khóa tu thiền ở đây rất bổ ích, giúp tôi tìm lại sự bình yên và học được nhiều điều từ Phật pháp.\""
+        },
+        {
+            "id": 3,
+            "author": {
+                "avatar": "👩",
+                "info": {
+                    "name": "Thanh Hương",
+                    "address": "Đà Nẵng"
+                }
+            },
+            "stars": 5,
+            "text": "\"Chùa Kỳ Viên là nơi lý tưởng để tu tập và tìm hiểu Phật pháp. Các buổi pháp thoại rất hay, dễ hiểu và áp dụng được vào cuộc sống. Cảm ơn Thầy và Ban hộ trì!\""
+        },
+        {
+            "id": 4,
+            "author": {
+                "avatar": "👨",
+                "info": {
+                    "name": "Quốc Huy",
+                    "address": "Cần Thơ"
+                }
+            },
+            "stars": 5,
+            "text": "\"Tôi rất ấn tượng với các hoạt động từ thiện của chùa. Đây là nơi thực sự thực hành lòng từ bi của đạo Phật. Mỗi lần đến chùa, tôi đều cảm nhận được năng lượng tích cực.\""
+        },
+        {
+            "id": 5,
+            "author": {
+                "avatar": "👩",
+                "info": {
+                    "name": "Ngọc Trâm",
+                    "address": "Thừa Thiên Huế"
+                }
+            },
+            "stars": 5,
+            "text": "\"Mỗi lần đến chùa, tôi cảm nhận được sự thanh thản trong tâm hồn. Không gian yên tĩnh, cảnh quan đẹp, giúp tôi dễ dàng quán niệm và tịnh tâm hơn.\""
+        },
+        {
+            "id": 6,
+            "author": {
+                "avatar": "👨",
+                "info": {
+                    "name": "Hữu Lộc",
+                    "address": "Hải Phòng"
+                }
+            },
+            "stars": 5,
+            "text": "\"Thầy giảng dạy rõ ràng, dễ hiểu, truyền cảm hứng để tôi thực tập chánh niệm trong đời sống hằng ngày. Rất biết ơn chư tăng và nhà chùa.\""
+        }
+    ]
+}

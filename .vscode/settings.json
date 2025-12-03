@@ -1,0 +1,62 @@
+{
+  // ChatGPT extension configuration (by mpociot)
+  "chat.openaiApiKey": "",
+  // Specify locations for custom chat mode files (to add your own custom chat modes)
+  "chat.modeFilesLocations": {
+    ".github/chatmodes": true,
+    "/Users/vscode/repos/chatmodes": true
+  },
+  // Olamall AI extension configuration (uncomment and set your API key and custom model endpoint if needed)
+  // "chat.olamallEnabled": false,
+  // "chat.olamallApiKey": "",
+  // "chat.olamallCustomModelEndpoint": "",
+
+  // Enable quick suggestions inside comments, strings, and other code
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on",
+    "other": "on"
+  },
+
+  // Accept suggestions on Enter key press
+  "editor.acceptSuggestionOnEnter": "on",
+  // Reduce delay for quick suggestions to appear (faster autocomplete)
+  "editor.quickSuggestionsDelay": 10,
+  // Enable word-based suggestions from matching documents only for more relevant suggestions in large projects and workspaces
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  // Enable parameter hints to show function signatures while typing (arguments) for better code completion experience
+  // "editor.parameterHints": true,
+
+  // Files settings configuration for your *.code-workspace
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.vs": true,
+    "**/.svn": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/packages": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/.venv": true,
+    "**/env": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/$RECYCLE.BIN": true,
+    "**/System Volume Information": true,
+    // Some other necessary configurations for your *.code-workspace
+    "**/.obsidian": true
+  },
+
+  // Git extension settings (built-in VSCode)
+  "git.ignoreLimitWarning": true,
+
+  // File nesting settings (requires File Nesting extension by Tobiah Zarlez)
+  "explorer.fileNesting.enabled": false,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${basename}.html, ${basename}.css, ${basename}.spec.ts",
+    "*.js": "${basename}.test.js, ${basename}.map",
+    "*.component.ts": "${basename}.component.html, ${basename}.component.css, ${basename}.component.scss, ${basename}.component.spec.ts"
+  }
+}
