@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://gist.quyit.id.vn/ky-vien-pagoda-tan-xuan/</loc>
+        <lastmod>2025-12-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://gist.quyit.id.vn/ky-vien-pagoda-tan-xuan/index.html</loc>
+        <lastmod>2025-12-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://gist.quyit.id.vn/ky-vien-pagoda-tan-xuan/gallery.html</loc>
+        <lastmod>2025-12-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gist.quyit.id.vn/ky-vien-pagoda-tan-xuan/charity-campaigns.html</loc>
+        <lastmod>2025-12-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gist.quyit.id.vn/ky-vien-pagoda-tan-xuan/charity-campaign-detail.html</loc>
+        <lastmod>2025-12-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
