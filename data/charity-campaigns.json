@@ -113,6 +113,28 @@
       "status": "active",
       "imageUrl": "./uploads/campaign-002-cuu-tro-lu-lut-mien-trung-phu-yen.jpg",
       "location": "Phú Yên, Miền Trung",
+      "eventImages": [
+        {
+          "url": "./uploads/campaign-002-figure-001.jpg",
+          "caption": "Hình ảnh sự kiện cứu trợ lũ lụt Phú Yên"
+        },
+        {
+          "url": "./uploads/campaign-002-figure-002.jpg",
+          "caption": "Trao quà cho bà con vùng lũ"
+        },
+        {
+          "url": "./uploads/campaign-002-figure-003.jpg",
+          "caption": "Các phần quà cứu trợ"
+        },
+        {
+          "url": "./uploads/campaign-002-figure-004.jpg",
+          "caption": "Đoàn từ thiện đến với bà con"
+        },
+        {
+          "url": "./uploads/campaign-002-figure-005.jpg",
+          "caption": "Hỗ trợ bà con khắc phục hậu quả lũ lụt"
+        }
+      ],
       "activities": [
         "Phát 500 phần quà cứu trợ cho các hộ dân bị ảnh hưởng do lũ lụt",
         "Hỗ trợ gạo, mì tôm, sữa, nhu yếu phẩm thiết yếu",

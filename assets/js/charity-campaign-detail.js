@@ -258,6 +258,23 @@ function displayCampaignDetail(campaign) {
                     </div>
                 </div>
                 
+                ${campaign.eventImages && campaign.eventImages.length > 0 ? `
+                <div class="campaign-section">
+                    <h2 class="section-heading">📸 Hình ảnh sự kiện</h2>
+                    <div class="event-images-grid">
+                        ${campaign.eventImages.map((image, index) => `
+                            <div class="event-image-item">
+                                <img src="${escapeHtml(image.url)}" 
+                                     alt="${escapeHtml(image.caption || 'Hình ảnh sự kiện')}" 
+                                     loading="lazy"
+                                     class="event-image">
+                                ${image.caption ? `<p class="event-image-caption">${escapeHtml(image.caption)}</p>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                ` : ''}
+                
                 ${campaign.detailedInfo ? generateDetailedInfoSections(campaign.detailedInfo) : ''}
             </div>
             
