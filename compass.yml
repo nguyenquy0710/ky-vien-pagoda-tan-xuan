@@ -1,0 +1,16 @@
+name: static-map-template
+id: ari:cloud:compass:d080ee26-f21d-4730-84de-98c025104c05:component/e09ef9ad-8d69-4877-b0ee-7395c9ca13a3/3d181919-9f57-4f4f-9a12-7dc2501b2064
+description: static-map-template
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: https://github.com/nqdev-group/static-map-template
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null

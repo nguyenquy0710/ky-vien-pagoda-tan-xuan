@@ -1,0 +1,64 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "title": "Chánh điện chùa",
+      "description": "Chánh điện linh thiêng và trang nghiêm của Chùa Kỳ Viên",
+      "emoji": "🛕",
+      "backgroundColor": "#fff8e1",
+      "circleColor": "#ffa726",
+      "textColor": "#e65100",
+      "category": "temple"
+    },
+    {
+      "id": 2,
+      "title": "Tượng Phật",
+      "description": "Tượng Phật trang nghiêm tại điện thờ chính",
+      "emoji": "🙏",
+      "backgroundColor": "#fff3e0",
+      "circleColor": "#ff9800",
+      "textColor": "#e65100",
+      "category": "buddha"
+    },
+    {
+      "id": 3,
+      "title": "Tu tập thiền định",
+      "description": "Phật tử tu tập và thiền định tại chùa",
+      "emoji": "🧘",
+      "backgroundColor": "#e8f5e9",
+      "circleColor": "#66bb6a",
+      "textColor": "#2e7d32",
+      "category": "meditation"
+    },
+    {
+      "id": 4,
+      "title": "Hoạt động lễ Phật",
+      "description": "Các nghi lễ cầu nguyện và lễ Phật tại chùa",
+      "emoji": "☸️",
+      "backgroundColor": "#f1f8e9",
+      "circleColor": "#7cb342",
+      "textColor": "#558b2f",
+      "category": "ceremony"
+    },
+    {
+      "id": 5,
+      "title": "Không gian thanh tịnh",
+      "description": "Không gian yên bình và thanh tịnh của chùa",
+      "emoji": "🕉️",
+      "backgroundColor": "#fffde7",
+      "circleColor": "#fdd835",
+      "textColor": "#f57f17",
+      "category": "atmosphere"
+    },
+    {
+      "id": 6,
+      "title": "Hoạt động từ thiện",
+      "description": "Các hoạt động từ thiện và phát quà của chùa",
+      "emoji": "💝",
+      "backgroundColor": "#fce4ec",
+      "circleColor": "#ec407a",
+      "textColor": "#c2185b",
+      "category": "charity"
+    }
+  ]
+}
